@@ -1,0 +1,3150 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="shortcut icon" href="./src/svg/header/header-1.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+</head>
+<body>
+
+    <!-- start header -->
+    <header
+      class="header w-full lg:h-[683px] flex lg:justify-center   flex-col"
+    >
+      <div
+        class="w-full lg:h-full bgmber-300 lg:bg-[url(../images/header/img-1.jpg)] bg-no-repeat lg:bg-center bg-cover flex justify-center lg:relative flex-col lg:flex-row "
+      >
+        <nav
+          class="nav lg:w-[90%] lg:h-[96px] lg:bg-white lg:rounded-b-2xl flex justify-between lg:items-center lg:px-[32px] dark:bg-[#2b2b2b] h-[60px] w-full p-2 lg:p-0 gap-[4px] lg:gap-0 
+"
+        >
+          <!-- دکمه منو (مخصوص موبایل) -->
+          <div
+            class="w-[45px] h-[45px] lg:hidden flex items-center justify-center cursor-pointer border-1 border-solid border-[#2b2b2b]/20 dark:bg-[#2b2b2b]/30 dark:border-1 dark:border-solid dark:border-white/20 rounded-[4px] "
+            id="openSidebar"
+          >
+            <img
+              src="./src/svg/header/header-5.svg"
+              alt="menu"
+              class="w-6 h-6"
+            />
+          </div>
+
+          <!-- لایه تار پشت -->
+          <div
+            id="overlay"
+            class="fixed inset-0 bg-black/40 backdrop-blur-sm hidden transition-opacity duration-500"
+          ></div>
+
+          <!-- سایدبار -->
+          <div
+            id="sidebar"
+            class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full z-10 transition-transform duration-500 dark:bg-[#2b2b2b] "
+          >
+            <div
+              class="w-full h-[70px] flex justify-between items-center p-2.5 border-b border-[#2b2b2b]/20"
+            >
+              <div class="w-[96px] h-[36px] lg:hidden">
+                <img
+                  src="./src/svg/header/header-1.svg"
+                  alt="close"
+                  class="w-full h-full"
+                />
+              </div>
+
+              <!-- دکمه بستن -->
+              <div class="m-4 cursor-pointer" id="closeSidebar">
+                <img
+                  src="./src/svg/header/header-10.svg"
+                  alt="close"
+                  class="w-6 h-6"
+                />
+              </div>
+            </div>
+            <!-- محتوای سایدبار -->
+            <div class="p-4">
+              <p class="text-lg"></p>
+              <div class="flex gap-2.5 flex-wrap">
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    رزرو خودرو
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    خدمات ما
+                  </span>
+                </a>
+                <a href="./blog.html" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    بلاگ
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    درباره ما
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    تماس با ما
+                  </span>
+                </a>
+              </div>
+              <div class="flex flex-wrap gap-2.5 mt-[300px]">
+                <div
+                  class="test w-full lg:h-10 flex items-center cursor-pointer p-1.5 dark:text-white border-b-1 border-[#2b2b2b]/30 dark:border-b-1 dark:border-white/20"
+                >
+                  <span
+                    class="test flex font-Iran text-[#2b2b2b] text-[16px] dark:text-white"
+                    >تغیر تم</span
+                  >
+                </div>
+                <a href="./login.html" class="w-full h-10 flex items-center p-1.5">
+                  <img
+                    src="./src/svg/header/header-8.svg"
+                    alt=""
+                    class="w-6 flex"
+                  />
+                  <span
+                    class="font-Iran text-[16px] dark:text-white text-[#2b2b2b]"
+                  >
+                    حساب کاربری
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:w-[335px] lg:h-[124px] lg:absolute lg:right-17 lg:top-[190px]"
+          >
+            <h1
+              class="lg:text-[44px] lg:font-Iran lg:text-warning lg:flex hidden font-bold"
+            >
+              اُتـــو رِنت؛ سریع، آسان و به صرفه
+            </h1>
+          </div>
+          <div
+            class="lg:w-[460px] lg:h-[36px] lg:absolute lg:right-17 lg:top-[330px] lg:flex lg:items-center hidden"
+          >
+            <p class="lg:flex lg:text-[#F9F9F9] lg font-Iran">
+              سرویس دهنده رزرو خودرو در ایران در کمترین زمان ممکن!
+            </p>
+          </div>
+          <div
+            class="lg:w-[350px] lg:h-[48px] lg:absolute lg:right-17 lg:top-[410px] lg:flex gap-3"
+          >
+            <a
+              href="#"
+              class="lg:w-[186px] lg:h-[48px] lg:bg-[#D79C10] lg:flex lg:rounded-[7px] lg:px-[10px] lg:py-[8px] lg:items-center lg:gap-2 hidden"
+            >
+              <img
+                src="./src/svg/header/header-3.svg"
+                alt=""
+                class="lg:flex lg:w-[24px] lg:h-[24px] hidden"
+              />
+              <span class="lg:flex lg:font-Iran lg:text-black lg:text-[16px]"
+                >رزرو آسان خودرو</span
+              >
+            </a>
+            <a
+              href="#"
+              class="lg:w-[186px] lg:h-[48px] lg:flex lg:rounded-[7px] lg:px-[10px] lg:py-[8px] lg:items-center lg:gap-2 lg:border-1 lg:border-solid lg:border-[#FFFFFF] lg:justify-center hidden"
+            >
+              <img
+                src="./src/svg/header/header-4.svg"
+                alt=""
+                class="lg:flex lg:w-[24px] lg:h-[24px]"
+              />
+              <span
+                class="lg:flex lg:font-Iran lg:text-[#FFFFFF] lg:text-[16px]"
+                >تماس با ما</span
+              >
+            </a>
+          </div>
+          <div
+            class="lg:w-[151px] lg:h-[60px] w-[40%] h-full ex justify-between"
+          >
+            <img src="./src/svg/header/header-1.svg" alt="" class="flex" />
+          </div>
+          <div
+            class="lg:w-[515px] lg:h-[28px] flex lg:justify-between w-[60%] h-full items-center justify-end"
+          >
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >رزرو خودرو</span
+              >
+            </a>
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >خدمات ما</span
+              >
+            </a>
+            <a href="./blog.html" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                بلاگ</span
+              >
+            </a>
+            <a
+              href="./gh.html"
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center"
+            >
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                درباره ما</span
+              >
+            </a>
+            <a href="./call.html" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                تماس با ما</span
+              >
+            </a>
+            <div
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center cursor-pointer"
+            >
+              <span
+                class="btn lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >تغیر تم</span
+              >
+            </div>
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden"
+              >
+                <img src="./src/svg/header/header-2.svg" alt="" />
+              </span>
+            </a>
+            <div
+              class="w-60 h-14 lg:hidden flex items-center justify-end gap-2.5"
+            >
+              <div
+                id="searchTrigger"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-6.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </div>
+              <!-- 🔽 باکس سرچ که از پایین باز میشه -->
+              <div
+                id="searchBar"
+                class="fixed bottom-[-100%] left-0 w-full h-[15vh] bg-white z-50 transition-all duration-300 ease-in-out flex flex-wrap items-center justify-between px-4 lg:hidden shadow-[0_-2px_10px_rgba(0,0,0,0.2)]"
+              >
+                <span class="font-Iran text-[14px] text-[#2b2b2b]/90 lg:hidden">
+                  جستجو در سایت
+                </span>
+
+                <button id="closeSearch" class="text-[28px] text-blue-600">
+                  &times;
+                </button>
+                <input
+                  type="text"
+                  placeholder="جستجو..."
+                  class="w-full h-10 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm font-Iran"
+                />
+              </div>
+              <a
+                href="#"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-7.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-8.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </a>
+            </div>
+          </div>
+          <a
+            href="./login.html"
+            class="lg:w-[122px] lg:h-[40px] lg:bg-btn lg:flex lg:justify-center lg:items-center lg:rounded-[8px] lg:dark:bg-warning"
+          >
+            <span
+              class="lg:font-Iran lg:text-[14px] lg:text-btn-f lg:flex hidden lg:dark:text-[#2b2b2b]"
+              >ورود / ثبت‌نام</span
+            >
+          </a>
+        </nav>
+        <div
+          class="lg:w-[90%] lg:h-[200px] lg:bg-white lg:z-10 lg:absolute lg:top-[576px] lg:rounded-global dark:border-1 dark:border-solid dark:border-white/10 border-1 border-solid border-[#2b2b2b]/20 dark:bg-[#2b2b2b] flex lg:p-6 flex-wrap justify-center w-full p-1 px-0"
+        >
+          <div
+            class="w-full lg:h-10 flex justify-between items-center h-[80px] flex-col lg:flex-row "
+          >
+            <div
+              class="lg:w-[430px] lg:h-10 flex items-center justify-center gap-[10px] "
+            >
+              <a
+                href="#"
+                class="lg:w-[140px] h-10 bg-btn rounded-[20px] flex items-center px-2.5 justify-center"
+              >
+                <span class="font-Iran lg:text-[14px] text-white text-[11px]">
+                  اجاره خودرو با راننده
+                </span>
+              </a>
+              <a
+                href="#"
+                class="h-10 lg:w-[140px] lg:px-1 border-1 lg:border-solid border-[#2b2b2b]/30 px-2.5 rounded-[20px] flex items-center dark:border-1 dark:border-solid dark:border-white/10 justify-center"
+              >
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] lg:text-black lg:dark:text-white"
+                >
+                  اجاره خودرو بی راننده
+                </span>
+              </a>
+              <a
+                href="#"
+                class="h-10 lg:w-[140px] border-1 border-solid border-[#2b2b2b]/30 px-2.5 rounded-[20px] flex items-center dark:border-1 dark:border-solid dark:border-white/10 justify-center"
+              >
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] lg:text-black lg:dark:text-white"
+                >
+                  اجاره ماشین عروس
+                </span>
+              </a>
+            </div>
+            <div class="h-[25px] flex items-center">
+              <a
+                href="#"
+                class="text-btn font-Iran text-[14px] dark:text-warning"
+              >
+                اطلاعات بیشتر در مورد رزرو خودرو
+              </a>
+            </div>
+          </div>
+          <div class="w-full h-10 lg:flex hidden justify-between items-center">
+            <div
+              class="h-[25px] w-[200px] lg:flex hidden items-center lg:gap-1.5 justify-center"
+            >
+              <img
+                src="./src/svg/header/header-9.svg"
+                alt=""
+                class="w-[16px] h-[16px] lg:flex hidden"
+              />
+              <span
+                class="font-Iran text-black text-[11px] lg:text-[14px] dark:text-white"
+              >
+                محل تحویل خودرو
+              </span>
+            </div>
+            <div class="w-[620px] h-[25px] flex justify-between lg:px-0 px-2">
+              <div class="h-[25px] items-center flex gap-2">
+                <img
+                  src="./src/svg/header/header-9.svg"
+                  alt=""
+                  class="w-[16px] lg:flex hidden"
+                />
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] text-black dark:text-white"
+                >
+                  تاریخ تحویل
+                </span>
+              </div>
+              <div class="h-[25px] items-center flex gap-2">
+                <img
+                  src="./src/svg/header/header-9.svg"
+                  alt=""
+                  class="w-[16px] lg:flex hidden"
+                />
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] text-black dark:text-white"
+                >
+                  ساعت تحویل
+                </span>
+              </div>
+              <div class="h-[25px] items-center flex gap-2">
+                <img
+                  src="./src/svg/header/header-9.svg"
+                  alt=""
+                  class="w-[16px] lg:flex hidden"
+                />
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] text-black dark:text-white"
+                >
+                  تاریخ بازگشت
+                </span>
+              </div>
+              <div class="h-[25px] items-center flex lg:gap-2">
+                <img
+                  src="./src/svg/header/header-9.svg"
+                  alt=""
+                  class="w-[16px] lg:flex hidden"
+                />
+                <span
+                  class="font-Iran lg:text-[14px] text-[11px] text-black dark:text-white lg:ml-[100px]"
+                >
+                  ساعت بازگشت
+                </span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-[100%] lg:h-[56px] flex items-center justify-center lg:justify-start lg:flex-row flex-col p-2.5 lg:p-0"
+          >
+            <div
+              class="lg:w-[40%] lg:h-[56px] lg:mt-4 w-fit flex lg:justify-between gap-2"
+            >
+              <div class="w-[90%] lg:mx-auto mt-0 relative gap-2">
+                <!-- input-like dropdown -->
+                <div
+                  id="dropdown-toggle"
+                  class="flex items-center lg:w-[98%] w-[350px] justify-between px-4 py-2 rounded-md cursor-pointer border border-[#2b2b2b]/10 lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                >
+                  <!-- شهر انتخاب‌شده -->
+                  <span
+                    id="selected-city"
+                    class="text-right w-[60%] font-Iran text-[16px]"
+                    >در حال بارگذاری...</span
+                  >
+
+                  <!-- فلش -->
+                  <svg
+                    id="arrow-icon"
+                    class="w-5 h-5 text-gray-500 transition-transform duration-300 ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </div>
+
+                <!-- منو -->
+                <ul
+                  id="city-menu"
+                  class="absolute z-10 top-full left-0 w-full bg-white lg:dark:bg-[#2b2b2b] brder border-gray-300 rounded-md mt-1 overflow-hidden max-h-0 transition-all duration-300 ease-in-out shadow-lg lg:w-[98%]"
+                >
+                  <li
+                    class="px-4 py-2 lg:w-[85%] hover:bg-blue-100 hover:text-[#2b2b2b] cursor-pointer font-Iran text-[16px] lg:dark:text-white"
+                    data-city="تهران"
+                  >
+                    تهران
+                  </li>
+                  <li
+                    class="px-4 py-2 hover:bg-blue-100 cursor-pointer font-Iran text-[16px] lg:dark:text-white hover:text-[#2b2b2b]"
+                    data-city="اصفهان"
+                  >
+                    اصفهان
+                  </li>
+                  <li
+                    class="px-4 py-2 hover:bg-blue-100 cursor-pointer font-Iran text-[16px] lg:dark:text-white hover:text-[#2b2b2b]"
+                    data-city="مشهد"
+                  >
+                    مشهد
+                  </li>
+                  <li
+                    class="px-4 py-2 hover:bg-blue-100 cursor-pointer font-Iran text-[16px] lg:dark:text-white hover:text-[#2b2b2b]"
+                    data-city="شیراز"
+                  >
+                    شیراز
+                  </li>
+                  <li
+                    class="px-4 py-2 hover:bg-blue-100 cursor-pointer font-Iran text-[16px] lg:dark:text-white hover:text-[#2b2b2b]"
+                    data-city="تبریز"
+                  >
+                    تبریز
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="w-[50%] lg:h-[40px] flex lg:justify-between items-center flex-col lg:flex-row justify-center"
+            >
+              <div class="lg:h-[31px] h-fit lg:w-[70%]">
+                <div
+                  class="lg:w-full lg:max-w-xs lg:mx-auto lg:mt-0 relative text-right flex flex-col lg:flex-row"
+                >
+                  <!-- نمایش تاریخ -->
+                  <div
+                    class="flex items-center justify-between h-[32px] border-r-1 border-solid border-[#D7D7D7] rounded-md dark:bg-[#2b2b2b] dark:text-white cursor-pointer lg:pr-3 dark:border-r-1 dark:border-solid dark:border-[#fff]/20 w-[350px] lg:w-[111px] lg:bg-white px-4 py-2 lg:px-0 lg:py-0 lg:mt-0 mt-2.5"
+                    id="date-display "
+                  >
+                    <span
+                      id="selected-date"
+                      class="text-sm font-semibold w-[111px] text-[#2b2b2b] dark:text-white"
+                      >5/02/1404</span
+                    >
+                    <!-- آیکون تقویم -->
+                    <svg
+                      id="calendar-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="w-5 h-5 text-gray-500"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M8 7V3M16 7V3M3 11h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"
+                      />
+                    </svg>
+                  </div>
+
+                  <!-- پنل تقویم -->
+                  <div
+                    id="calendar-panel"
+                    class="absolute top-full mt-2 w-[200px] border rounded-md bg-hite lg:dark:bg-[#2b2b2b] lg:dark:text-white shadow-md p-4 hidden z-10 lg:border-1 border-solid border-[#2b2b2b]/20 lg:bg-white"
+                  >
+                    <!-- انتخاب سال و ماه -->
+                    <div
+                      class="flex justify-between mb-4 font-Iran text-[#2b2b2b]/50"
+                    >
+                      <select
+                        id="year-select"
+                        class="border p-1 rounded text-sm font-Iran lg:border-1 border-solid border-[#2b2b2b]/20 lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                      >
+                        <!-- پر می‌شه با JS -->
+                      </select>
+                      <select
+                        id="month-select"
+                        class="border p-1 rounded text-sm lg:border-1 border-solid border-[#2b2b2b]/20 text-[#2b2b2b]/50 lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                      >
+                        <!-- پر می‌شه با JS -->
+                      </select>
+                    </div>
+
+                    <!-- روزها -->
+                    <div
+                      id="calendar-days"
+                      class="grid grid-cols-7 text-center gap-y-2 text-sm font-Iran text-[#2b2b2b] lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                    >
+                      <!-- پر می‌شه با JS -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-[70%] lg:h-[31px]">
+                <div class="w-full h-full">
+                  <div class="relative inline-block w-full s text-right">
+                    <!-- نمایش ساعت -->
+                    <div
+                      id="time-display"
+                      class="flex justify-between items-center lg:dark:border-r-1 lg:dark:border-solid lg:dark:border-[#fff]/20 rounded-md lg:px-3 bg-whte lg:dark:bg-[#2b2b2b] dark:text-white border-r-1 border-solid border-[#D7D7D7] cursor-pointer lg:w-[111px] lg:h-[32px] px-4 py-2 lg:py-0 gap-4 lg:gap-0 w-[350px] h-[33px] lg:mt-0 mt-2.5"
+                    >
+                      <span
+                        id="selected-time"
+                        class="text-sm font-Iran lg:text-[#2b2b2b] lg:dark:text-white"
+                        >--:--</span
+                      >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        id="open-time-panel"
+                        class="w-5 h-5 text-gray-500 lg:dark:text-gray-500"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 6v6l4 2M12 2a10 10 0 100 20 10 10 0 000-20z"
+                        />
+                      </svg>
+                    </div>
+
+                    <!-- پنل انتخاب ساعت -->
+                    <div
+                      id="time-panel"
+                      class="absolute top-full mt-1 right-0 w-full bg-white lg:dark:bg-[#2b2b2b] border border-gray-300 rounded-md shadow-md p-3 hidden z-20"
+                    >
+                      <div class="flex gap-2">
+                        <select
+                          id="hour-select"
+                          class="w-1/2 border rounded px-2 py-1 text-sm bg-[#2b2b2b] text-white lg:dark:text-white lg:text-black"
+                        >
+                          <!-- ساعت‌ها -->
+                        </select>
+                        <select
+                          id="minute-select"
+                          class="w-1/2 border rounded px-2 text-sm bg-[#2b2b2b] font-Iran lg:dark:text-white text-[#fff]"
+                        >
+                          <!-- دقیقه‌ها -->
+                        </select>
+                      </div>
+                      <button
+                        id="confirm-time"
+                        class="mt-3 w-full bg-blue-500 text-white rounded py-1 text-sm hover:bg-blue-600 transition font-Iran lg:dark:bg-warning lg:dark:text-black lg:hover:text-white"
+                      >
+                        تایید
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-[70%] lg:h-[31px]">
+                <div class="lg:h-[31px]">
+                  <div
+                    class="w-full lg:max-w-xs lg:mx-auto mt-0 relative text-right"
+                  >
+                    <!-- نمایش تاریخ -->
+                    <div
+                      class="flex items-center justify-between h-[32px] border-r-1 border-solid border-[#D7D7D7] rounded-md bg-whte dark:bg-[#2b2b2b] dark:text-white cursor-pointer lg:pr-3 dark:border-r-1 dark:border-solid dark:border-[#fff]/20 lg:w-[111px] w-[350px] px-4 py-2 lg:px-0 lg:py-0 lg:mt-0 mt-2.5"
+                      id="date-display"
+                    >
+                      <span
+                        id="selected-date"
+                        class="text-sm font-semibold w-[111px] text-[#2b2b2b] lg:dark:text-white"
+                        >5/02/1404</span
+                      >
+                      <!-- آیکون تقویم -->
+                      <svg
+                        id="calendar-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="w-5 h-5 text-gray-500"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M8 7V3M16 7V3M3 11h18M5 5h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"
+                        />
+                      </svg>
+                    </div>
+
+                    <!-- پنل تقویم -->
+                    <div
+                      id="calendar-panel"
+                      class="absolute top-full mt-2 w-[200px] border rounded-md bg-hite lg:dark:bg-[#2b2b2b] lg:dark:text-white shadow-md p-4 hidden z-10 lg:border-1 border-solid border-[#2b2b2b]/20"
+                    >
+                      <!-- انتخاب سال و ماه -->
+                      <div
+                        class="flex justify-between mb-4 font-Iran text-[#2b2b2b]/50"
+                      >
+                        <select
+                          id="year-select"
+                          class="border p-1 rounded text-sm font-Iran lg:border-1 border-solid border-[#2b2b2b]/20 lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                        >
+                          <!-- پر می‌شه با JS -->
+                        </select>
+                        <select
+                          id="month-select"
+                          class="border p-1 rounded text-sm lg:border-1 border-solid border-[#2b2b2b]/20 text-[#2b2b2b]/50 lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                        >
+                          <!-- پر می‌شه با JS -->
+                        </select>
+                      </div>
+
+                      <!-- روزها -->
+                      <div
+                        id="calendar-days"
+                        class="grid grid-cols-7 text-center gap-y-2 text-sm font-Iran text-[#2b2b2b] lg:dark:bg-[#2b2b2b] lg:dark:text-white"
+                      >
+                        <!-- پر می‌شه با JS -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="lg:w-[70%] lg:h-[31px]">
+                <div class="lg:w-[70%] lg:h-[31px]">
+                  <div class="w-full h-full">
+                    <div
+                      class="relative inline-block w-full lg:max-w-xs text-right"
+                    >
+                      <!-- نمایش ساعت -->
+                      <div
+                        id="time-display"
+                        class="flex justify-between items-center lg:dark:border-r-1 lg:dark:border-solid lg:dark:border-[#fff]/20 rounded-md lg:px-3 lg:dark:bg-[#2b2b2b] dark:text-white border-r-1 border-solid border-[#D7D7D7] cursor-pointer lg:w-[111px] lg:h-[32px] gap-4 lg:gap-0 w-[350px] px-4 py-2 lg:py-0 lg:mt-0 mt-2.5"
+                      >
+                        <span
+                          id="selected-time"
+                          class="text-sm font-Iran lg:text-[#2b2b2b] lg:dark:text-white"
+                          >12:30</span
+                        >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          id="open-time-panel"
+                          class="w-5 h-5 text-gray-500 lg:dark:text-gray-500"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 6v6l4 2M12 2a10 10 0 100 20 10 10 0 000-20z"
+                          />
+                        </svg>
+                      </div>
+
+                      <!-- پنل انتخاب ساعت -->
+                      <div
+                        id="time-panel"
+                        class="absolute top-full mt-1 right-0 w-full bg-white lg:dark:bg-[#2b2b2b] border border-gray-300 rounded-md shadow-md p-3 hidden z-20"
+                      >
+                        <div class="flex gap-2">
+                          <select
+                            id="hour-select"
+                            class="w-1/2 border rounded px-2 py-1 text-sm bg-[#2b2b2b] text-white lg:dark:text-white lg:text-black"
+                          >
+                            <!-- ساعت‌ها -->
+                          </select>
+                          <select
+                            id="minute-select"
+                            class="w-1/2 border rounded px-2 text-sm bg-[#2b2b2b] font-Iran lg:dark:text-white text-[#fff]"
+                          >
+                            <!-- دقیقه‌ها -->
+                          </select>
+                        </div>
+                        <button
+                          id="confirm-time"
+                          class="mt-3 lg:w-full bg-blue-500 text-white rounded py-1 text-sm hover:bg-blue-600 transition font-Iran lg:dark:bg-warning lg:dark:text-black lg:hover:text-white"
+                        >
+                          تایید
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[56px] lg:h-[56px] bg-warning lg:rounded-global rounded-[8px] flex justify-center items-center w-[350px] h-[33px] lg:mt-0 mt-[20px]"
+            >
+              <img
+                src="./src/svg/header/header-2.svg"
+                alt=""
+                class="w-[24px] h-[24px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- estart brand -->
+    <div
+      class="brand w-full h-[100px] lg:h-[200px] border-b border-[#2b2b2b]/15 flex justify-center items-end   dark:bg-[#2b2b2b]"
+    >
+      <div class="w-full h-[80px] flex justify-between lg:px-2.5">
+        <!-- Grid (فقط دسکتاپ) -->
+        <div
+          class="hidden lg:flex lg:flex-cols-10 lg:justify-between lg:w-full lg:h-full"
+        >
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-2.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-3.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-4.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-5.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-6.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-7.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-8.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-9.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-10.png" alt="" />
+          </a>
+          <a
+            href="#"
+            class="flex justify-center items-center text-sm lg:w-[80px] lg:h-[80px]"
+          >
+            <img src="./src/images/brand/brand-1.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div
+        class="w-full h-[80px] flex lg:hidden justify-between px-2.5 items-center "
+      >
+        <!-- Swiper (فقط موبایل/تبلت) -->
+        <div
+          class="swiper w-full  mySwiper lg:hidden flex justify-center items-center "
+        >
+          <div class="swiper-wrapper lg:hidden">
+            <div class="swiper-slide text-center text-[14px] flex items-center">
+              <img
+                src="./src/images/brand/brand-2.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-3.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] items-center h-full"
+            >
+              <img
+                src="./src/images/brand/brand-4.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-5.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-6.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-7.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-8.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-9.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-10.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+            <div
+              class="swiper-slide text-center text-[14px] h-full items-center"
+            >
+              <img
+                src="./src/images/brand/brand-1.png"
+                alt=""
+                class="w-[90px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end brand -->
+      <!-- start question -->
+    <div
+      class="question lg:w-full lg:h-[340px] lg:flex lg:justify-center lg:items-end dark:bg-[#2b2b2b] bg-green-500"
+    >
+      <div
+        class="lg:w-[90%] lg:h-[292px] lg:rounded-global lg:bg-[url(../images/question/question-1.jpg)] lg:brightness-50 lg:bg-cover lg:bg-center lg:bg-no-repeat lg:flex lg:justify-center lg:mt-2.5 bg-[url(../images/question/question-2.png)] bg-no-repeat bg-center bg-cover brightness-80 w-full h-[210px] flex mt-0 lg:items-center relative"
+      >
+      <div
+        class="lg:top-4 right-4 top-0 lg:right-[200px] flex absolute justify-center flex-col "
+      >
+        <h2
+          class="lg:font-Iran lg:text-[24px] lg:text-warning lg:w-full lg:h-[48px] lg:text-center lg:font-bold lg:block lg:mt-0 text-warning font-Iran text-[18px] text-center w-[375px] h-[30px] block mt-3"
+        >
+          چــــــرا اُتو رِنت؟
+        </h2>
+        <p
+          class="lg:font-Iran lg:w-[765px] lg:h-[96px] lg:text-white lg:text-center lg:mx-auto lg:block font-Iran w-[345px] line-clamp-3 text-white text-[13px] lg:px-20"
+        >
+          اجاره خودرو از یک شرکت اجاره خودرو با سابقه به شما کمک می‌کند تا در
+          مسافرت ها، قرار ملاقات‌ های مهم، مجالس و مراسم‌های خانوادگی ماشین
+          مناسب خود را در اختیار داشته باشید. اگر شما اصلا خودرویی در اختیار
+          ندارید یا خودروی شما مطمئن نیست، می‌توانیداز سوییچ، خودروی مناسب خود
+          را کرایه کرده و با آسودگی به سفر بروید.
+        </p>
+      </div>
+    </div>
+      
+      <div
+        class="lg:w-[936px] lg:h-[186px] lg:absolute top-[700px] lg:top-[1130px] lg:rounded-global lg:flex lg:justify-between lg:gap-8 lg:px-0 w-full h-[80px] absolute bottom-[-50px] px-9 flex justify-between gap-2.5"
+      >
+        <a
+          href="#"
+          class="lg:w-[312px] lg:h-[196px] lg:bg-[#fff] lg:rounded-global lg:px-4 lg:py-6 lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border lg:dark:border-white/20 justify-center flex-wrap lg:flex w-[160px] h-[105px] bg-[#fff] flex rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20 p-1.5 lg:p-0"
+        >
+          <div
+            class="lg:w-full lg:h-[72px] lg:flex lg:justify-center w-full h-[32px] flex justify-center"
+          >
+            <img
+              src="./src/svg/question/question-1.svg"
+              alt=""
+              class="lg:w-full lg:h-full w-full h-full"
+            />
+          </div>
+          <div class="lg:h-[22px] lg:text-center lg:mt-3 mt-0 ">
+            <span
+              class="lg:font-Iran lg:text-[16px] lg:font-bold lg:text-[#414141] lg:dark:text-white/65 font-Iran text-[10px] font-bold text-[#414141] dark:text-white/65"
+            >
+              تحویل در محل
+            </span>
+          </div>
+          <div class="lg:h-[44px] lg:mt-3.5">
+            <p
+              class="lg:font-Iran lg:text-[14px] lg:text-[#757575] lg:font-[400px] lg:text-center lg:dark:text-white/40 font-Iran text-[8px] font-[400px] text-[#414141] dark:text-white/40 text-center"
+            >
+              تحویل خودرو در زمان و مکان تعیین شده توسط شما خواهد بود.
+            </p>
+          </div>
+        </a>
+
+        <a
+          href="#"
+          class="lg:w-[312px] lg:h-[196px] lg:bg-[#fff] lg:rounded-global lg:px-4 lg:py-6 lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border lg:dark:border-white/20 justify-center flex-wrap lg:flex w-[160px] h-[105px] bg-[#fff] flex rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20 p-1.5 lg:p-0"
+        >
+          <div
+            class="lg:w-full lg:h-[72px] lg:flex lg:justify-center w-full h-[32px] flex justify-center"
+          >
+            <img
+              src="./src/svg/question/question-2.svg"
+              alt=""
+              class="lg:w-full lg:h-full w-full h-full"
+            />
+          </div>
+          <div class="lg:h-[22px] lg:text-center lg:mt-3 mt-0">
+            <span
+              class="lg:font-Iran lg:text-[16px] lg:font-bold font-Iran text-[10px] font-bold text-[#414141] dark:text-white/65"
+            >
+              پشتیبانی 24 ساعته
+            </span>
+          </div>
+          <div class="lg:line-clamp-3 lg:mt-3.5">
+            <p
+              class="lg:text-[14px] lg:text-[#757575] lg:text-center line-clamp-3 font-Iran text-[8px] font-[400px] text-[#414141] dark:text-white/40 text-center"
+            >
+              کارشناسان ما در هر زمان و مکان، پاسخگوی سوالات شما خواهند بود.
+            </p>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="lg:w-[312px] lg:h-[196px] lg:bg-[#fff] lg:rounded-global lg:px-4 lg:py-6 lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border lg:dark:border-white/20 justify-center flex-wrap lg:flex w-[160px] h-[105px] bg-[#fff] flex rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20 p-1.5 lg:p-0"
+        >
+          <div
+            class="lg:w-full lg:h-[72px] lg:flex lg:justify-center w-full h-[32px] flex justify-center"
+          >
+            <img
+              src="./src/svg/question/question-3.svg"
+              alt=""
+              class="lg:w-full lg:h-full w-full h-full"
+            />
+          </div>
+          <div class="lg:h-[22px] lg:text-center lg:mt-3 mt-0">
+            <span
+              class="lg:font-Iran lg:text-[16px] lg:font-bold font-Iran text-[10px] font-bold text-[#414141] dark:text-white/65"
+            >
+              قیمت مناسب
+            </span>
+          </div>
+          <div class="lg:h-[44px] lg:mt-3.5">
+            <p
+              class="lg:text-[14px] lg:text-[#757575] lg:text-center font-Iran text-[8px] font-[400px] text-[#414141] dark:text-white/40 text-center"
+            >
+              هدف ما، ارائه بهترین خدمات با مناسب ترین قیمت ممکن است.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- end question -->
+      <!-- start car -->
+    <div
+      class="car w-full lg:h-[294px] dark:bg-[#2b2b2b] flex justify-center lg:items-end"
+    >
+      <div
+        class="lg:w-[90%] lg:h-[144px] lg:flex-row lg:gap-2 gap-0 flex w-full flex-col h-[732px] justify-center mt-[66px] lg:mt-0 dark:bg-[#2b2b2b] lg:items-start items-center"
+      >
+        <a
+          href="#"
+          class="w-[238px] h-[144px] flex bg-[#FFFFFF] rounded-global flex-wrap border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20"
+        >
+          <div class="w-full h-1/4 flex justify-center">
+            <span
+              class="text-center font-Iran text-[24px] text-[#353535] dark:text-white/45"
+            >
+              کوپه
+            </span>
+          </div>
+          <div class="w-full h-3/4 flex justify-center">
+            <img
+              src="./src/images/car/car-1.png"
+              alt=""
+              class="transform rotate-y-180"
+            />
+          </div>
+        </a>
+        <a
+          href="#"
+          class="w-[238px] h-[144px] flex bg-[#FFFFFF] rounded-global flex-wrap border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20"
+        >
+          <div class="w-full h-1/4 flex justify-center">
+            <span
+              class="text-center font-Iran text-[24px] text-[#353535] dark:text-white/45"
+            >
+              سدان
+            </span>
+          </div>
+          <div class="w-full h-3/4 flex justify-center">
+            <img
+              src="./src/images/car/car-2.png"
+              alt=""
+              class="transform rotate-y-180"
+            />
+          </div>
+        </a>
+        <a
+          href="#"
+          class="w-[238px] h-[144px] flex bg-[#FFFFFF] rounded-global flex-wrap border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20"
+        >
+          <div class="w-full h-1/4 flex justify-center">
+            <span
+              class="text-center font-Iran text-[24px] text-[#353535] dark:text-white/45"
+            >
+              کروک
+            </span>
+          </div>
+          <div class="w-full h-3/4 flex justify-center">
+            <img
+              src="./src/images/car/car-3.png"
+              alt=""
+              class="transform rotate-y-180"
+            />
+          </div>
+        </a>
+        <a
+          href="#"
+          class="w-[238px] h-[144px] flex bg-[#FFFFFF] rounded-global flex-wrap border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20"
+        >
+          <div class="w-full h-1/4 flex justify-center">
+            <span
+              class="text-center font-Iran text-[24px] text-[#353535] dark:text-white/45"
+            >
+              شاسی بلند
+            </span>
+          </div>
+          <div class="w-full h-3/4 flex justify-center">
+            <img src="./src/images/car/car-4.png" alt="" class="transform" />
+          </div>
+        </a>
+        <a
+          href="#"
+          class="w-[238px] h-[144px] flex bg-[#FFFFFF] rounded-global flex-wrap border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border dark:border-white/20"
+        >
+          <div class="w-full h-1/4 flex justify-center">
+            <span
+              class="text-center font-Iran text-[24px] text-[#353535] dark:text-white/45"
+            >
+              اسپرت
+            </span>
+          </div>
+          <div class="w-full h-3/4 flex justify-center">
+            <img
+              src="./src/images/car/car-5.png"
+              alt=""
+              class="transform rotate-y-180"
+            />
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- end car -->
+      <!-- start reservation -->
+    <div
+      class="resevation w-full h-[109px] flex justify-center lg:mt-0 dark:bg-[#2b2b2b]"
+    >
+      <div class="lg:w-[40%] h-full flex flex-col w-full dark:bg-[#2b2b2b]">
+        <div class="w-full h-1/2 flex justify-center items-end">
+          <span
+            class="font-Iran lg:text-[24px] text-[#5E5E5E] text-[18px] flex"
+          >
+            مشاهده موجودی خودروها
+          </span>
+        </div>
+        <div class="w-full h-1/2 flex justify-center lg:gap-1.5 items-center">
+          <span class="text-[24px] font-Iran lg:text-[32px] text-black flex">
+            رزرو خودرو در
+          </span>
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-[#D79C10] flex"
+          >
+            اُتـــورِنت
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="w-full h-[48px] flex justify-center dark:bg-[#2b2b2b]">
+      <div
+        class="w-[70%] lg:w-[420px] h-[48px] flex justify-center items-center relative gap-2 flex-wrap lg:flex-nowrap"
+      >
+        <!-- سه لینک اول -->
+        <div class="flex justify-center items-center gap-2 w-full lg:w-auto">
+          <a
+            class="flex w-[90px] lg:w-[128px] h-[38px] lg:h-[48px] border border-[#194BF0] rounded-[8px] px-4 py-1 justify-center items-center hover:bg-[#194BF0] hover:text-white"
+          >
+            <span class="font-Iran text-[14px] text-[#0C4F96] hover:text-white"
+              >پرطرفدار</span
+            >
+          </a>
+
+          <a
+            class="flex w-[90px] lg:w-[128px] h-[38px] lg:h-[48px] border border-[#194BF0] rounded-[8px] px-4 py-1 justify-center items-center hover:bg-[#194BF0] hover:text-white"
+          >
+            <span class="font-Iran text-[14px] text-[#0C4F96] hover:text-white"
+              >لوکس</span
+            >
+          </a>
+
+          <a
+            class="flex w-[90px] lg:w-[128px] h-[38px] lg:h-[48px] border border-[#194BF0] rounded-[8px] px-4 py-1 justify-center items-center hover:bg-[#194BF0] hover:text-white"
+          >
+            <span class="font-Iran text-[14px] text-[#0C4F96] hover:text-white"
+              >اقتصادی</span
+            >
+          </a>
+        </div>
+
+        <!-- a آخر با position absolute -->
+        <a
+          class="absolute lg:flex lg:w-[184px] lg:h-[48px] lg:left-[-300px] lg:justify-center lg:items-center gap-2 hidden"
+        >
+          <span class="font-Iran text-[18px] text-[#194BF0]">مشاهده همه</span>
+          <img
+            src="./src/svg/reservation/reserv-1.svg"
+            alt=""
+            class="w-[20px] h-[20px]"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="justify-center w-full flex dark:bg-[#2b2b2b]">
+      <div
+        class="w-[90%] grid gap-6 pt-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 dark:bg-[#2b2b2b]"
+      >
+        <!-- کارت‌ها -->
+
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-3.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره بنز E350 سدان
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-4.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره تویوتا لندکروز در تهران 2013
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-2.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره جنسیس کوپه
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-5.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره بی ام و 528
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-6.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره هیوندای توسان 2014
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <div
+          class="lg:h-[510px] lg:p-4 lg:gap-2 lg:flex lg:flex-wrap lg:rounded-global lg:border lg:border-[#D7D7D7] lg:dark:bg-[#2b2b2b] lg:dark:border-[#D7D7D7]/20 h-[510px] p-4 gap-2 flex flex-wrap rounded-global border border-[#D7D7D7] dark:bg-[#2b2b2b] dark:border-[#D7D7D7]/20"
+        >
+          <!-- تصویر -->
+          <div class="w-full aspect-[16/9] dark:bg-[#2b2b2b]">
+            <img
+              src="./src/images/reservation/reserv-7.png"
+              alt=""
+              class="w-full h-full object-cover rounded-[8px]"
+            />
+          </div>
+
+          <!-- متن -->
+          <div class="w-full h-[52px]">
+            <span
+              class="block font-Iran text-[16px] text-[#0C0C0C] dark:text-[#fff]/50"
+            >
+              اجاره بنز sl کروک
+            </span>
+            <span class="block mt-2 font-Iran text-[12px] text-[#494949]">
+              مدل:2016
+            </span>
+          </div>
+
+          <!-- قیمت روزانه -->
+          <div
+            class="w-full h-[44px] font-Iran bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >روزانه</span
+            >
+          </div>
+
+          <!-- قیمت ماهانه -->
+          <div
+            class="w-full h-[44px] bg-[#F3F3F3] dark:bg-[#F3F3F3]/5 rounded-[8px] p-2 flex gap-2 items-center"
+          >
+            <span
+              class="w-[80px] font-Iran text-[12px] text-[#212121] dark:text-[#fff]/50"
+              >از ۱ تا ۳۰ روز:</span
+            >
+            <span
+              class="w-[241px] font-Iran text-[16px] font-bold text-[#194BF0] dark:text-warning"
+              >۸,۵۰۰,۰۰۰</span
+            >
+            <span
+              class="text-[12px] font-Iran text-[#494949] dark:text-[#fff]/50"
+              >ماهانه</span
+            >
+          </div>
+
+          <!-- ضمانت -->
+          <div class="w-full flex justify-between items-center h-[21px]">
+            <div
+              class="text-[12px] font-Iran font-medium text-[#212121] dark:text-[#fff]/50"
+            >
+              مبلغ ضمانت:
+            </div>
+            <div
+              class="text-[12px] font-Iran font-bold text-[#212121] dark:text-[#fff]/50"
+            >
+              ۸۰ میلیون تومان
+            </div>
+          </div>
+
+          <!-- دکمه -->
+          <a
+            href="#"
+            class="w-full h-[40px] bg-[#194BF0] dark:bg-warning rounded-[8px] px-4 py-1 flex justify-center items-center font-Iran"
+          >
+            <span
+              class="text-[#fff] font-Iran dark:text-black text-[14px] font-medium"
+              >درخواست رزرو</span
+            >
+          </a>
+        </div>
+        <!-- کارت تکرار... -->
+      </div>
+    </div>
+
+    <!-- end reservation -->
+      <!-- start wraper -->
+    <div
+      class="wrapper w-full h-[109px] flex justify-center lg:mt-0 dark:bg-[#2b2b2b]"
+    >
+      <div class="lg:w-[40%] h-full flex flex-col w-full dark:bg-[#2b2b2b]">
+        <div class="w-full h-1/2 flex justify-center items-end">
+          <span
+            class="font-Iran lg:text-[24px] text-[#5E5E5E] text-[18px] flex"
+          >
+            چگونه در وبسایت
+          </span>
+        </div>
+        <div class="w-full h-1/2 flex justify-center lg:gap-1.5 items-center">
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-[#D79C10] font-bold flex"
+          >
+            اُتـــورِنت
+          </span>
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-black flex font-bold"
+          >
+            خودرو رزرو کنیم؟
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="lg:w-full lg:h-[893px] lg:flex dark:bg-[#2b2b2b] lg:justify-center"
+    >
+      <div class="lg:w-[90%] lg:flex lg:justify-center lg:relative">
+        <!-- المان بالا راست -->
+        <div
+          class="lg:absolute lg:top-0 lg:right-0 lg:pr-3.5 w-full lg:w-[35%] lg:h-fit flex lg:items-end justify-center lg:justify-start"
+        >
+          <img src="./src/svg/wrapper/wrapper-1.svg" alt="" class="" />
+          <div
+            class="lg:w-full w-[75%] gap-2 lg:absolute flex lg:items-center lg:left-[12%] lg:bottom-[-36%] items-end"
+          >
+            <div
+              class="lg:w-[32%] w-[27%] h-[60px] lg:h-[80px] rounded-global bg-white border border-[#D7D7D7] flex items-center justify-center"
+            >
+              <img src="./src/svg/wrapper/wrapper-2.svg" alt="" />
+            </div>
+            <div class="h-full">
+              <div class="h-1/2 flex gap-2 items-end pt-5 lg:pt-0">
+                <span
+                  class="h-full flex text-[18px] lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#D79C10]"
+                >
+                  خودروی
+                </span>
+                <span
+                  class="h-full flex text-[18px] lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#212121]"
+                >
+                  خود را انتخاب کنید.
+                </span>
+              </div>
+              <span
+                class="flex lg:text-[clamp(8px,2vw,16px)] font-Iran font-medium text-[#5E5E5E] items-start"
+              >
+                خودروی مورد نظر خود را، متناسب با درخواست خود انتخاب کنید.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- المان بالا چپ -->
+        <div
+          class="lg:absolute lg:top-0 lg:left-0 lg:w-[35%] flex lg:justify-end w-full justify-center pt-2.5 lg:pt-0"
+        >
+          <img src="./src/svg/wrapper/wrapper-5.svg" alt="" class="" />
+          <div
+            class="lg:w-full w-[75%] gap-2 lg:absolute flex lg:items-center lg:left-[-12%] lg:bottom-[-36%] items-end"
+          >
+            <div
+              class="lg:w-[26%] lg:h-[80px] w-[23%] h-[60px] rounded-global bg-white border border-[#D7D7D7] flex lg:hidden items-center justify-center"
+            >
+              <img src="./src/svg/wrapper/wrapper-2.svg" alt="" />
+            </div>
+            <div class="h-full">
+              <div class="h-1/2 flex gap-2 items-end pt-5 lg:pt-0">
+                <span
+                  class="h-full flex text-[18px] lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#D79C10]"
+                >
+                  تاریخ
+                </span>
+                <span
+                  class="h-full flex text-[18px] lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#212121]"
+                >
+                  تحویل را تعیین کنید.
+                </span>
+              </div>
+              <span
+                class="flex lg:text-[clamp(8px,2vw,16px)] font-Iran font-medium text-[#5E5E5E] items-start"
+              >
+                تاریخ موردنظر خود را از تقویم، انتخاب و رزرو کنید
+              </span>
+            </div>
+            <div
+              class="lg:w-[26%] lg:h-[80px] w-[27%] h-[60px] rounded-global bg-white border border-[#D7D7D7] lg:flex hidden items-center justify-center"
+            >
+              <img src="./src/svg/wrapper/wrapper-2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- المان وسط  -->
+        <div
+          class="lg:w-[30%] h-[893px] w-full flex justify-between items-center flex-col relative"
+        >
+          <div class="w-[47px] h-[135px] z-0 bg-[#FDB713] absolute top-0"></div>
+          <img
+            src="./src/images/wrapper/wrapper-1.png"
+            alt=""
+            class="z-10 lg:absolute lg:top-[20px]"
+          />
+          <div
+            class="w-[47px] h-[135px] z-0 bg-[#FDB713] absolute bottom-0"
+          ></div>
+        </div>
+
+        <!-- المان پایین راست -->
+        <div
+          class="lg:absolute lg:bottom-[240px] lg:right-0 lg:w-[35%] w-full lg:justify-start flex justify-center"
+        >
+          <img src="./src/svg/wrapper/wrapper-3.svg" alt="" class="" />
+          <div
+            class="lg:w-full w-[75%] lg:gap-7 gap-2 lg:absolute flex lg:items-center lg:left-[0%] lg:bottom-[-36%] items-end"
+          >
+            <div
+              class="lg:w-[42%] w-[27%] h-[60px] lg:h-[80px] rounded-global bg-white border border-[#D7D7D7] flex items-center justify-center"
+            >
+              <img src="./src/svg/wrapper/wrapper-2.svg" alt="" class="place" />
+            </div>
+            <div class="h-full">
+              <div class="h-1/2 flex gap-2 items-end pt-5 lg:pt-0">
+                <span
+                  class="h-full flex lg:text-[clamp(14px,2vw,24px)] text-[18px] font-Iran font-bold text-[#D79C10]"
+                >
+                  هزینه
+                </span>
+                <span
+                  class="h-full flex lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#212121]"
+                >
+                  اجاره را پرداخت کنید.
+                </span>
+              </div>
+              <span
+                class="flex text-[clamp(13px,2vw,14px)] lg:text-[clamp(8px,2vw,16px)] font-Iran font-medium text-[#5E5E5E] items-start"
+              >
+                می توانید از طریق کیف پول آنلاین یا کارت های عضو شبکه شتاب هزینه
+                اجاره را پرداخت کنید.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- المان پایین چپ -->
+        <div
+          class="lg:absolute lg:bottom-[240px] lg:left-0 lg:w-[35%] w-full justify-center pt-2.5 lg:pt-0 flex lg:justify-end"
+        >
+          <img src="./src/svg/wrapper/wrapper-4.svg" alt="" />
+          <div
+            class="lg:w-full w-[75%] gap-2 lg:absolute flex lg:items-center lg:left-[-10%] lg:bottom-[-36%] items-end"
+          >
+            <div
+              class="lg:w-[26%] lg:h-[80px] w-[23%] h-[60px] rounded-global bg-white border border-[#D7D7D7] flex items-center justify-center lg:hidden"
+            >
+              <img src="./src/svg/wrapper/wrapper-8.svg" alt="" class="" />
+            </div>
+            <div class="h-full">
+              <div class="h-1/2 flex gap-2 items-end pt-5 lg:pt-0">
+                <span
+                  class="h-full flex text-[18px] lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#D79C10]"
+                >
+                  خودرو
+                </span>
+                <span
+                  class="h-full flex lg:text-[clamp(14px,2vw,24px)] font-Iran font-bold text-[#212121] text-[18px]"
+                >
+                  را دریافت کنید.
+                </span>
+              </div>
+              <span
+                class="flex lg:text-[clamp(12px,2vw,16px)] font-Iran font-medium text-[#5E5E5E] lg:items-start"
+              >
+                در زمان و مکان تعیین شده، خودروی خود را دریافت کنید.
+              </span>
+            </div>
+            <div
+              class="lg:w-[26%] lg:h-[80px] lg:rounded-global bg-white lg:border lg:border-[#D7D7D7] lg:flex lg:items-center lg:justify-center hidden"
+            >
+              <img src="./src/svg/wrapper/wrapper-8.svg" alt="" class="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end wraper -->
+     <!-- start services -->
+    <div
+      class="wrapper w-full h-[109px] flex justify-center lg:mt-0 dark:bg-[#2b2b2b]"
+    >
+      <div class="lg:w-[40%] h-full flex flex-col w-full dark:bg-[#2b2b2b]">
+        <div class="w-full h-1/2 flex justify-center items-end">
+          <span
+            class="font-Iran lg:text-[24px] text-[#5E5E5E] text-[18px] flex"
+          >
+            آنچه مشتریان ما درموردمان گفته‌اند.
+          </span>
+        </div>
+        <div class="w-full h-1/2 flex justify-center lg:gap-1.5 items-center">
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-black font-bold flex"
+          >
+            نظرات
+          </span>
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-[#D79C10] flex font-bold"
+          >
+            مشتریان
+          </span>
+        </div>
+      </div>
+    </div>
+    <div 
+      class="lg:w-full lg:flex lg:justify-center dark:bg-[#2b2b2b]">
+      <div class="lg:w-[90%] lg:flex lg:gap-2.5 dark:bg-[#2b2b2b]">
+        <div
+          class="lg:w-[65%] lg:h-full dark:bg-[#2b2b2b] gap-2.5 flex flex-col items-center lg:items-start"
+        >
+          <!-- آیتم ۱ -->
+          <div
+            class="rounded-lg overflow-hidden transition-all duration-300 lg:w-[100%] border border-[#D7D7D7] flex flex-wrap w-[90%] dark:border dark:border-[#D7D7D7]/20 dark:bg-[#2b2b2b]"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="lg:w-full w-[370px] h-[76px] flex items-center px-[16px] py-[24px] gap-[8px]"
+            >
+              <div
+                class="lg:rounded-[7px] w-[25px] h-[25px] flex justify-center items-center"
+              >
+                <img
+                  src="./src/svg/servicess/services-3.svg"
+                  alt=""
+                  class="lg:w-[25px] lg:h-[25px]"
+                />
+              </div>
+              <span
+                class="lg:text-[16px] font-Iran text-[#353535] text-[12px] font-medium dark:text-[#D7D7D7]"
+              >
+                در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+              </span>
+            </button>
+            <div
+              class="accordion-content overflow-hidden transition-all duration-300 px-4 lg:font-Iran w-[370px] h-[20px] lg:w-full lg:dark:bg-[#2b2b2b]"
+            >
+              <p class="py-4 font-Iran text-[#727272] text-[14px] font-normal">
+                در زمان اجاره خودرو بدون راننده خودروها کارواش شده درو به کارواش
+                نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده مشتری
+                می باشد.
+              </p>
+            </div>
+          </div>
+          <!-- آیتم ۲ (پیش‌فرض باز) -->
+          <div
+            class="rounded-lg overflow-hidden transition-all duration-300 border border-[#D7D7D7] flex flex-wrap w-[90%] lg:w-full dark:border dark:border-[#D7D7D7]/20 dark:bg-[#2b2b2b]"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="lg:w-full lg:h-[76px] w-[370px] flex items-center px-[16px] py-[24px] gap-[8px]"
+            >
+              <div
+                class="w-[20px] h-[20px] flex justify-center items-center border-solid border-2 border-[#194BF0] rounded-[7px]"
+              >
+                <img
+                  src="./src/images/services/services-2.png"
+                  alt=""
+                  class="h-[20px] w-[20px]"
+                />
+              </div>
+              <span
+                class="lg:text-[16px] font-Iran text-[#353535] text-[12px] font-medium dark:text-[#D7D7D7]"
+                >هزینه بنزین و کارواش در خودروهای اجاره ای به عهده کیست؟</span
+              >
+            </button>
+            <div
+              class="accordion-content overflow-hidden transition-all duration-300 px-4 h-fit lg:dark:bg-[#2b2b2b]"
+            >
+              <p
+                class="py-4 font-Iran text-[#727272] text-[14px] font-normal line-clamp-3"
+              >
+                در زمان اجاره خودرو بدون راننده خودروها کارواش شده و با باک
+                بنزین پر تحویل مشتریان عزیز می گردد. در زمان استرداد خودرو در
+                صورتی که خودرو به کارواش نیاز داشته و یا خودرو دارای کسر سوخت
+                باشد هزینه آن بر عهده مشتری می باشد.
+              </p>
+            </div>
+          </div>
+          <!-- آیتم ۳ -->
+          <div
+            class="rounded-lg overflow-hidden transition-all duration-300 lg:w-[100%] border border-[#D7D7D7] flex flex-wrap w-[90%] dark:border dark:border-[#D7D7D7]/20 dark:bg-[#2b2b2b]"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="lg:w-full w-[370px] h-[76px] flex items-center px-[16px] py-[24px] gap-[8px]"
+            >
+              <div class="w-[25px] h-[25px] flex justify-center items-center">
+                <img
+                  src="./src/svg/servicess/services-3.svg"
+                  alt=""
+                  class="lg:w-[25px] lg:h-[25px]"
+                />
+              </div>
+              <span
+                class="lg:text-[16px] font-Iran text-[#353535] text-[12px] font-medium dark:text-[#D7D7D7]"
+              >
+                در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+              </span>
+            </button>
+            <div
+              class="accordion-content overflow-hidden transition-all duration-300 px-4 lg:font-Iran w-[370px] h-[20px] lg:w-full lg:dark:bg-[#2b2b2b]"
+            >
+              <p class="py-4 font-Iran text-[#727272] text-[14px] font-normal">
+                در زمان اجاره خودرو بدون راننده خودروها کارواش شده درو به کارواش
+                نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده مشتری
+                می باشد.
+              </p>
+            </div>
+          </div>
+          <!-- آیتم ۴ -->
+          <div
+            class="rounded-lg overflow-hidden transition-all duration-300 lg:w-[100%] border border-[#D7D7D7] flex flex-wrap w-[90%] dark:border dark:border-[#D7D7D7]/20 dark:bg-[#2b2b2b]"
+          >
+            <button
+              onclick="toggleAccordion(this)"
+              class="lg:w-full w-[370px] h-[76px] flex items-center px-[16px] py-[24px] gap-[8px]"
+            >
+              <div class="w-[25px] h-[25px] flex justify-center items-center">
+                <img
+                  src="./src/svg/servicess/services-3.svg"
+                  alt=""
+                  class="lg:w-[25px] lg:h-[25px]"
+                />
+              </div>
+              <span
+                class="lg:text-[16px] font-Iran text-[#353535] text-[12px] font-medium dark:text-[#D7D7D7]"
+              >
+                در صورت بروز نقص فنی برای خودرو چه اتفاقی می افتد؟
+              </span>
+            </button>
+            <div
+              class="accordion-content overflow-hidden transition-all duration-300 px-4 lg:font-Iran w-[370px] h-[20px] lg:w-full lg:dark:bg-[#2b2b2b]"
+            >
+              <p class="py-4 font-Iran text-[#727272] text-[14px] font-normal">
+                در زمان اجاره خودرو بدون راننده خودروها کارواش شده درو به کارواش
+                نیاز داشته و یا خودرو دارای کسر سوخت باشد هزینه آن بر عهده مشتری
+                می باشد.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-[35%] lg:h-full lg:flex lg:justify-center lg:items-center"
+        >
+          <div
+            class="lg:w-[392px] lg:h-[450px] bg-blue-200 lg:flex lg:justify-end lg:rounded-global object-cover hidden"
+          >
+            <img
+              src="./src/images/services/services-1.png"
+              alt=""
+              class="lg:w-full lg:h-full lg:rounded-global"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end services -->
+     <!-- strat Comments -->
+    <div
+      class="wrapper w-full h-[109px] flex justify-center lg:mt-0 dark:bg-[#2b2b2b]"
+    >
+      <div class="lg:w-[40%] h-full flex flex-col w-full dark:bg-[#2b2b2b]">
+        <div class="w-full h-1/2 flex justify-center items-end">
+          <span
+            class="font-Iran lg:text-[24px] text-[#5E5E5E] text-[18px] flex"
+          >
+            آنچه مشتریان ما درموردمان گفته‌اند.
+          </span>
+        </div>
+        <div class="w-full h-1/2 flex justify-center lg:gap-1.5 items-center">
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-black font-bold flex"
+          >
+            نظرات
+          </span>
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-[#D79C10] flex font-bold"
+          >
+            مشتریان
+          </span>
+        </div>
+      </div>
+    </div>
+    <div 
+      class="w-full flex justify-center dark:bg-[#2b2b2b]">
+      <div
+        class="lg:w-[90%] lg:h-full mt-5 flex flex-col w-full lg:rounded-global justify-center border border-[#D7D7D7] rounded-global py-[16px] dark:border dark:border-[#D7D7D7]/20"
+      >
+        <div class="w-full lg:h-[75%] h-fit flex flex-col items-center">
+          <div class="lg:w-[136px] lg:h-[217px] w-[136px] h-[217px]">
+            <div
+              class="w-[136px] h-[136px] bg-[#194BF0] rounded-[50%] p-[5px] flex items-center justify-center"
+            >
+              <img
+                src="./src/images/comments/com-1.jpg"
+                alt=""
+                class="lg:rounded-[50%] flex rounded-[50%]"
+              />
+            </div>
+            <div class="w-full h-[28px] mt-[5px] flex justify-center">
+              <span
+                class="flex font-Iran text-[#0C0C0C] text-[16px] font-semibold"
+              >
+                اولدوز بهاور
+              </span>
+            </div>
+            <div class="w-full h-[24px] mt-[5px] flex justify-between">
+              <img
+                src="./src/svg/comments/commen-2.svg"
+                alt=""
+                class="w-[24px] h-[24px] flex"
+              />
+              <img
+                src="./src/svg/comments/commen-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] flex"
+              />
+              <img
+                src="./src/svg/comments/commen-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] flex"
+              />
+              <img
+                src="./src/svg/comments/commen-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] flex"
+              />
+              <img
+                src="./src/svg/comments/commen-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] flex"
+              />
+            </div>
+          </div>
+          <div
+            class="lg:w-[1000px] lg:px-[140px] w-[350px] h-[107px] px-[5px] flex justify-center"
+          >
+            <span
+              class="font-Iran text-[#727272] text-[14px] font-normal text-center flex"
+            >
+              اولین بار بود که برای مسافرت ماشین اجاره می‌کردم و به دنبال یک
+              شرکت با سابقه و مطمئن می‌گشتم!بدون هیچ شکی میگم، اتو رنت تو کار
+              خودش بهترینه!پشتیبانی عالی، هزینه بسیار مناسب، آسان بودن روند
+              اجاره و رزرو؛ هرچی بگم کم گفتم!حتماً دفعه بعد هم برای اجاره ماشین
+              به سراغشون میام.
+            </span>
+          </div>
+        </div>
+        <div
+          class="w-full lg:h-[25%] flex flex-col lg:flex-row lg:justify-between gap-2.5 items-center mt-8 lg:pt-0"
+        >
+          <a
+            href="#"
+            class="lg:w-[25%] w-[288px] h-[96px] hover:bg-[#FDB713] transition-all duration-300 border dark:border dark:border-[#D7D7D7]/20 border-[#D7D7D7]/95 rounded-global p-[16px] flex justify-center items-center gap-[16px]"
+          >
+            <div class="w-[64px]">
+              <img
+                src="./src/images/comments/com-1.jpg"
+                alt=""
+                class="flex w-full h-full rounded-[50%]"
+              />
+            </div>
+            <div
+              class="flex w-[120px] h-[61px] flex-wrap justify-center gap-[3px]"
+            >
+              <span
+                class="w-[117px] h-1/2 font-Iran text-[16px] text-[#212121] font-medium flex justify-center dark:text-amber-50/50"
+              >
+                اولدوز بهاور
+              </span>
+              <span
+                class="w-[97px] h-1/2 font-Iran text-[14px] text-[#494949] font-normal flex justify-center items-center dark:text-amber-50/35"
+              >
+                27 دی ماه 1380
+              </span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="lg:w-[25%] w-[288px] h-[96px] hover:bg-[#FDB713] transition-all duration-300 border dark:border dark:border-[#D7D7D7]/20 border-[#D7D7D7]/95 rounded-global p-[16px] flex justify-center items-center gap-[16px]"
+          >
+            <div class="w-[64px]">
+              <img
+                src="./src/images/comments/com-2.jpg"
+                alt=""
+                class="flex w-full h-full rounded-[50%]"
+              />
+            </div>
+            <div
+              class="flex w-[120px] h-[61px] flex-wrap justify-center gap-[3px]"
+            >
+              <span
+                class="w-[117px] h-1/2 font-Iran text-[16px] text-[#212121] font-medium flex justify-center dark:text-amber-50/50"
+              >
+                محمدجواد امینی
+              </span>
+              <span
+                class="w-[97px] h-1/2 font-Iran text-[14px] text-[#494949] font-normal flex justify-center items-center dark:text-amber-50/35"
+              >
+                27 دی ماه 1399
+              </span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="lg:w-[25%] w-[288px] h-[96px] hover:bg-[#FDB713] transition-all duration-300 border dark:border dark:border-[#D7D7D7]/20 border-[#D7D7D7]/95 rounded-global p-[16px] flex justify-center items-center gap-[16px]"
+          >
+            <div class="w-[64px]">
+              <img
+                src="./src/images/comments/com-3.jpg"
+                alt=""
+                class="flex w-full h-full rounded-[50%]"
+              />
+            </div>
+            <div
+              class="flex w-[120px] h-[61px] flex-wrap justify-center gap-[3px]"
+            >
+              <span
+                class="w-[117px] h-1/2 font-Iran text-[16px] text-[#212121] font-medium flex justify-center dark:text-amber-50/50"
+              >
+                فرزانه حیدری
+              </span>
+              <span
+                class="w-[97px] h-1/2 font-Iran text-[14px] text-[#494949] font-normal flex justify-center items-center dark:text-amber-50/35"
+              >
+                27 دی ماه 1380
+              </span>
+            </div>
+          </a>
+          <a
+            href="#"
+            class="lg:w-[25%] w-[288px] h-[96px] hover:bg-[#FDB713] transition-all duration-300 border dark:border dark:border-[#D7D7D7]/20 border-[#D7D7D7]/95 rounded-global p-[16px] flex justify-center items-center gap-[16px]"
+          >
+            <div class="w-[64px]">
+              <img
+                src="./src/images/comments/com-4.jpg"
+                alt=""
+                class="flex w-full h-full rounded-[50%]"
+              />
+            </div>
+            <div
+              class="flex w-[120px] h-[61px] flex-wrap justify-center gap-[3px]"
+            >
+              <span
+                class="w-[117px] h-1/2 font-Iran text-[16px] text-[#212121] font-medium flex justify-center dark:text-amber-50/50"
+              >
+                فاطمه ابراهیمی‌فر
+              </span>
+              <span
+                class="w-[97px] h-1/2 font-Iran text-[14px] text-[#494949] font-normal flex justify-center items-center dark:text-amber-50/35"
+              >
+                27 دی ماه 1380
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end Comments -->
+         <!-- start weblog -->
+    <div
+      class="wrapper w-full h-[109px] flex justify-center lg:mt-0 dark:bg-[#2b2b2b]"
+    >
+      <div class="lg:w-[40%] h-full flex flex-col w-full dark:bg-[#2b2b2b]">
+        <div class="w-full h-1/2 flex justify-center items-end">
+          <span
+            class="font-Iran lg:text-[24px] text-[#5E5E5E] text-[18px] flex"
+          >
+            مقالات ما
+          </span>
+        </div>
+        <div class="w-full h-1/2 flex justify-center lg:gap-1.5 items-center">
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-black font-bold flex"
+          >
+            مجله
+          </span>
+          <span
+            class="text-[24px] font-Iran lg:text-[32px] text-[#D79C10] flex font-bold"
+          >
+            خودرو
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="weblog w-full lg:h-[370px] dark:bg-[#2b2b2b] flex justify-center"
+    >
+      <div
+        class="lg:w-[90%] h-full w-full flex lg:justify-between lg:flex-row flex-col items-center lg:items-start"
+      >
+        <a
+          href="#"
+          class="lg:w-[33%] w-[80%] h-full p-[16px] border border-[#D7D7D7] flex flex-col justify-between rounded-global dark:border dark:border-[#D7D7D7]/20"
+        >
+          <div class="w-full h-[50%]">
+            <img
+              src="./src/images/weblog/weblog-1.jpg"
+              alt=""
+              class="flex w-full h-full object-cover rounded-global"
+            />
+          </div>
+          <div class="w-full h-[45%]">
+            <div class="w-full h-[85%] flex flex-col gap-4">
+              <span
+                class="w-full font-Iran text-[#414141] text-[16px] font-medium"
+              >
+                روش های مختلف برای اجاره خودرو
+              </span>
+              <span
+                class="line-clamp-2 font-Iran text-[12px] text-[#757575] font-normal"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده است.
+              </span>
+            </div>
+            <div class="w-full h-[15%] flex">
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-1.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۳ دقیقه
+                </span>
+              </div>
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-2.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۱,۲۱۳
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="lg:w-[33%] w-[80%] h-full p-[16px] border border-[#D7D7D7] flex flex-col justify-between rounded-global dark:border dark:border-[#D7D7D7]/20 mt-2 lg:mt-0"
+        >
+          <div class="w-full h-[50%]">
+            <img
+              src="./src/images/weblog/weblog-2.jpg"
+              alt=""
+              class="flex w-full h-full object-cover rounded-global"
+            />
+          </div>
+          <div class="w-full h-[45%]">
+            <div class="w-full h-[85%] flex flex-col gap-4">
+              <span
+                class="w-full font-Iran text-[#414141] text-[16px] font-medium"
+              >
+                روش های مختلف برای اجاره خودرو
+              </span>
+              <span
+                class="line-clamp-2 font-Iran text-[12px] text-[#757575] font-normal"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده است.
+              </span>
+            </div>
+            <div class="w-full h-[15%] flex">
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-1.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۳ دقیقه
+                </span>
+              </div>
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-2.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۱,۲۱۳
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a
+          href="#"
+          class="lg:w-[33%] w-[80%] h-full p-[16px] border border-[#D7D7D7] flex flex-col justify-between rounded-global dark:border dark:border-[#D7D7D7]/20 mt-2 lg:mt-0"
+        >
+          <div class="w-full h-[50%]">
+            <img
+              src="./src/images/weblog/weblog-3.jpg"
+              alt=""
+              class="flex w-full h-full object-cover rounded-global"
+            />
+          </div>
+          <div class="w-full h-[45%]">
+            <div class="w-full h-[85%] flex flex-col gap-4">
+              <span
+                class="w-full font-Iran text-[#414141] text-[16px] font-medium"
+              >
+                روش های مختلف برای اجاره خودرو
+              </span>
+              <span
+                class="line-clamp-2 font-Iran text-[12px] text-[#757575] font-normal"
+              >
+                امروزه با تغییراتی که در سبک زندگی مردم و شرایط اقتصادی جوامع به
+                وجود آمده است نیازهای افراد و نحوه دسترسی به آنها نیز دچار
+                تحولاتی شده است.
+              </span>
+            </div>
+            <div class="w-full h-[15%] flex">
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-1.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۳ دقیقه
+                </span>
+              </div>
+              <div class="w-[30%] h-full flex gap-2 items-center">
+                <img src="./src/svg/weblog/weblog-2.svg" alt="" />
+                <span class="font-Iran text-[#757575] text-[14px] font-normal">
+                  ۱,۲۱۳
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- end weblog -->
+     <!-- start footer -->
+    <footer
+      class="footer w-full h-[432px] mt-[30px] flex justify-center dark:bg-[#2b2b2b]"
+    >
+      <div
+        class="w-[90%] h-fit bg-[#1E1E1EE5] flex flex-col items-center lg:py-[40px] lg:justify-between rounded-global"
+      >
+        <div
+          class="lg:w-[90%] lg:h-[101px] flex lg:justify-between lg:items-center lg:p-4 lg:rounded-global lg:border lg:border-[#868686] w-[80%] flex-col lg:flex-row items-center"
+        >
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-1.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  ارتباط با ما
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  0912-21326545
+                </span>
+              </div>
+            </div>
+          </a>
+          <div
+            class="lg;w-[32px] lg:h-[25px] lg:border lg:border-[#868686] lg:flex"
+          ></div>
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-2.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  ایمیل
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  autorent@info.com
+                </span>
+              </div>
+            </div>
+          </a>
+          <div
+            class="lg;w-[32px] lg:h-[25px] lg:border lg:border-[#868686] lg:flex"
+          ></div>
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-3.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  آدرس
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  تهران- خ شادمان
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="lg:w-[97%] lg:h-[233px] lg:flex lg:flex-col lg:items-center"
+        >
+          <div class="lg:w-[90%] lg:h-[80%] lg:flex">
+            <div class="lg:w-[60%] lg:h-full lg:flex">
+              <div
+                class="lg:w-[80%] lg:h-full flex justify-center flex-col lg:block"
+              >
+                <div class="lg:w-full lg:h-[40%] lg:flex lg:items-center">
+                  <img src="./src/images/footer/footer-1.png" alt="" />
+                </div>
+                <div class="lg:w-full lg:h-[60%] flex lg:items-centerpr-[30px]">
+                  <span
+                    class="font-Iran lg;text-[#FFF] lg:text-[14px] lg:font-normal"
+                  >
+                    اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن
+                    بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر،
+                    اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به
+                    مشتریان است.
+                  </span>
+                </div>
+              </div>
+              <div
+                class="lg:w-[20%] lg:h-full flex flex-col justify-between items-center w-full h-fit lg:mt-0 mt-2.5"
+              >
+                <div class="w-full h-[50%] flex items-center justify-center">
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    دسترسی آسان
+                  </span>
+                </div>
+                <div
+                  class="w-full h-[50%] flex flex-col justify-between items-center lg:mt-0 mt-2.5"
+                >
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    سوالات متداول
+                  </span>
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    تماس با ما
+                  </span>
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    درباره ما
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[40%] h-full flex flex-col justify-center w-full items-center"
+            >
+              <span
+                class="font-Iran text-[#414141] text-[16px] font-semibold w-full flex justify-start pr-[11%] lg:pr-0 lg:block"
+              >
+                خبرنامه
+              </span>
+              <!-- کانتینر input + دکمه -->
+              <div class="flex lg:w-full font-Iran w-[80%] rounded-global">
+                <!-- اینپوت -->
+                <input
+                  id="textInput"
+                  type="text"
+                  placeholder="ایمیل خود را وارد کنید"
+                  class="flex-1 border border-gray-300 px-4 py-2 rounded-r-md focus:outline-none lg:border lg:order-[#AEAEAE] font-Iran w-[40%]"
+                />
+                <!-- دکمه سمت چپ -->
+                <button
+                  id="submitBtn"
+                  class="bg-[#FDB713] text-white px-4 py-2 rounded-l-md hover:bg-blue-600 lg:rounded-[6px] lg:px-[16px] lg:py:[12px] lg:cursor-pointer"
+                >
+                  ارسال
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full h-[20%] flex justify-center gap-2 items-center lg:mt-0 mt-3"
+          >
+            <img
+              src="./src/svg/footer/footer-4.svg"
+              alt=""
+              class="w-[24px] h-[24px]"
+            />
+            <span class="font-Iran text-[#9A9A9A] text-[14px] font-medium">
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+     <!-- dark mode -->
+    <script>
+      let btn = document.querySelector(".btn");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      let test = document.querySelector(".test");
+      test.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      const openBtnn = document.getElementById("openSidebar");
+      const closeBtn = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      // باز شدن
+      openBtnn.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-full");
+        overlay.classList.remove("hidden");
+      });
+
+      // بسته شدن با دکمه
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+
+      // بسته شدن با کلیک روی بک‌گراند
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+    </script>
+    <!-- 🧠 جاوااسکریپت برای کنترل باز و بسته شدن -->
+    <script>
+      const trigger = document.getElementById("searchTrigger");
+      const searchBar = document.getElementById("searchBar");
+      const closBtn = document.getElementById("closeSearch");
+
+      trigger.addEventListener("click", () => {
+        searchBar.classList.remove("bottom-[-100%]");
+        searchBar.classList.add("bottom-0");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        searchBar.classList.remove("bottom-0");
+        searchBar.classList.add("bottom-[-100%]");
+      });
+    </script>
+    <script>
+      const toggle = document.getElementById("dropdown-toggle");
+      const menu = document.getElementById("city-menu");
+      const selected = document.getElementById("selected-city");
+      const arrowIcon = document.getElementById("arrow-icon");
+
+      let isOpen = false;
+
+      // آرایه شهرها و مقدار اولیه
+      const cities = ["تهران", "اصفهان", "مشهد", "شیراز", "تبریز"];
+      const randomCity = cities[Math.floor(Math.random() * cities.length)];
+      selected.textContent = randomCity;
+
+      toggle.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          menu.classList.remove("max-h-0");
+          menu.classList.add("max-h-[300px]");
+
+          // افکت چسبندگی input و منو
+          toggle.classList.add("rounded-b-none", "border-b-0");
+          menu.classList.add("rounded-t-none");
+
+          arrowIcon.classList.add("rotate-180");
+        } else {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+
+          arrowIcon.classList.remove("rotate-180");
+        }
+      });
+
+      menu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", () => {
+          selected.textContent = item.getAttribute("data-city");
+
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+          arrowIcon.classList.remove("rotate-180");
+          isOpen = false;
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+          arrowIcon.classList.remove("rotate-180");
+          isOpen = false;
+        }
+      });
+    </script>
+    <!-- script date desktap -->
+    <script>
+      const display = document.getElementById("date-display");
+      const icon = document.getElementById("calendar-icon");
+      const panel = document.getElementById("calendar-panel");
+      const calendarDays = document.getElementById("calendar-days");
+      const selectedDate = document.getElementById("selected-date");
+      const yearSelect = document.getElementById("year-select");
+      const monthSelect = document.getElementById("month-select");
+
+      let selectedDay = 5;
+      let selectedMonth = 2;
+      let selectedYear = 1404;
+
+      // پر کردن سال و ماه
+      for (let y = 1390; y <= 1450; y++) {
+        const option = document.createElement("option");
+        option.value = y;
+        option.textContent = y;
+        if (y === selectedYear) option.selected = true;
+        yearSelect.appendChild(option);
+      }
+
+      for (let m = 1; m <= 12; m++) {
+        const option = document.createElement("option");
+        option.value = m;
+        option.textContent = m.toString().padStart(2, "0");
+        if (m === selectedMonth) option.selected = true;
+        monthSelect.appendChild(option);
+      }
+
+      // باز و بسته کردن تقویم
+      icon.addEventListener("click", (e) => {
+        e.stopPropagation();
+        panel.classList.toggle("hidden");
+        renderCalendar();
+      });
+
+      // کلیک بیرون برای بستن
+      document.addEventListener("click", (e) => {
+        if (!display.contains(e.target) && !panel.contains(e.target)) {
+          panel.classList.add("hidden");
+        }
+      });
+
+      // تغییر سال/ماه
+      yearSelect.addEventListener("change", () => {
+        selectedYear = parseInt(yearSelect.value);
+        renderCalendar();
+      });
+
+      monthSelect.addEventListener("change", () => {
+        selectedMonth = parseInt(monthSelect.value);
+        renderCalendar();
+      });
+
+      // نمایش تاریخ
+      function updateDisplayedDate() {
+        const monthStr = selectedMonth.toString().padStart(2, "0");
+        selectedDate.textContent = `${selectedDay}/${monthStr}/${selectedYear}`;
+      }
+
+      // رندر روزهای تقویم
+      function renderCalendar() {
+        calendarDays.innerHTML = "";
+        const daysInMonth = 31;
+
+        for (let d = 1; d <= daysInMonth; d++) {
+          const cell = document.createElement("span");
+          cell.textContent = d;
+          cell.className = "cursor-pointer hover:bg-blue-100 py-1 rounded-full";
+
+          if (d === selectedDay) {
+            cell.classList.add("bg-blue-500", "text-white", "font-bold");
+          }
+
+          cell.addEventListener("click", () => {
+            selectedDay = d;
+            updateDisplayedDate();
+            panel.classList.add("hidden");
+          });
+
+          calendarDays.appendChild(cell);
+        }
+      }
+
+      // اولین بار
+      updateDisplayedDate();
+    </script>
+    <!-- script time desktaop -->
+    <script>
+      const selectedTime = document.getElementById("selected-time");
+      const openBtn = document.getElementById("open-time-panel");
+      const timePanel = document.getElementById("time-panel");
+      const hourSelect = document.getElementById("hour-select");
+      const minuteSelect = document.getElementById("minute-select");
+      const confirmBtn = document.getElementById("confirm-time");
+
+      // مقدار پیش‌فرض
+      let selectedHour = 14;
+      let selectedMinute = 30;
+
+      // پر کردن ساعت و دقیقه
+      for (let h = 0; h < 24; h++) {
+        const opt = document.createElement("option");
+        opt.value = h;
+        opt.textContent = h.toString().padStart(2, "0");
+        if (h === selectedHour) opt.selected = true;
+        hourSelect.appendChild(opt);
+      }
+
+      for (let m = 0; m < 60; m++) {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m.toString().padStart(2, "0");
+        if (m === selectedMinute) opt.selected = true;
+        minuteSelect.appendChild(opt);
+      }
+
+      // نمایش مقدار پیش‌فرض
+      selectedTime.textContent = `${selectedHour
+        .toString()
+        .padStart(2, "0")}:${selectedMinute.toString().padStart(2, "0")}`;
+
+      // باز کردن پنل
+      openBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        timePanel.classList.toggle("hidden");
+      });
+
+      // تایید زمان
+      confirmBtn.addEventListener("click", () => {
+        const h = hourSelect.value.toString().padStart(2, "0");
+        const m = minuteSelect.value.toString().padStart(2, "0");
+        selectedTime.textContent = `${h}:${m}`;
+        timePanel.classList.add("hidden");
+      });
+
+      // بستن با کلیک بیرون
+      document.addEventListener("click", (e) => {
+        if (!timePanel.contains(e.target) && !openBtn.contains(e.target)) {
+          timePanel.classList.add("hidden");
+        }
+      });
+    </script>
+    <!-- script respansiv mobaile -->
+    <script>
+      // ======================= جستجوی شهر =======================
+      const mobileV2_cityInput = document.getElementById("mobileV2_cityInput");
+      const mobileV2_cityList = document.getElementById("mobileV2_cityList");
+      const mobileV2_cityItems = Array.from(
+        mobileV2_cityList.getElementsByTagName("li")
+      );
+
+      mobileV2_cityInput.addEventListener("input", () => {
+        const term = mobileV2_cityInput.value.toLowerCase();
+        let hasMatch = false;
+        mobileV2_cityItems.forEach((li) => {
+          const match = li.textContent.toLowerCase().includes(term);
+          li.style.display = match ? "block" : "none";
+          if (match) hasMatch = true;
+        });
+        mobileV2_cityList.classList.toggle("hidden", !hasMatch);
+      });
+
+      mobileV2_cityItems.forEach((li) => {
+        li.addEventListener("click", () => {
+          mobileV2_cityInput.value = li.textContent;
+          mobileV2_cityList.classList.add("hidden");
+        });
+      });
+
+      // ======================= تقویم =======================
+      const mobileV2_dateToggle = document.getElementById(
+        "mobileV2_dateToggle"
+      );
+      const mobileV2_calendarPanel = document.getElementById(
+        "mobileV2_calendarPanel"
+      );
+      const mobileV2_selectedDate = document.getElementById(
+        "mobileV2_selectedDate"
+      );
+      const mobileV2_yearSelect = document.getElementById(
+        "mobileV2_yearSelect"
+      );
+      const mobileV2_monthSelect = document.getElementById(
+        "mobileV2_monthSelect"
+      );
+      const mobileV2_daysContainer = document.getElementById(
+        "mobileV2_daysContainer"
+      );
+
+      mobileV2_dateToggle.addEventListener("click", () => {
+        mobileV2_calendarPanel.classList.toggle("hidden");
+      });
+
+      function updateMobileV2CalendarDays() {
+        mobileV2_daysContainer.innerHTML = "";
+        const year = parseInt(mobileV2_yearSelect.value);
+        const month = parseInt(mobileV2_monthSelect.value);
+        const daysInMonth = new Date(year, month, 0).getDate();
+
+        for (let i = 1; i <= daysInMonth; i++) {
+          const day = document.createElement("div");
+          day.textContent = i;
+          day.className =
+            "cursor-pointer hover:bg-warning rounded-full transition text-sm";
+          day.addEventListener("click", () => {
+            mobileV2_selectedDate.textContent = `${i}/${mobileV2_monthSelect.value}/${mobileV2_yearSelect.value}`;
+            mobileV2_calendarPanel.classList.add("hidden");
+          });
+          mobileV2_daysContainer.appendChild(day);
+        }
+      }
+
+      // مقداردهی اولیه سال و ماه
+      for (let y = 1400; y <= 1410; y++) {
+        const opt = document.createElement("option");
+        opt.value = y;
+        opt.textContent = y;
+        mobileV2_yearSelect.appendChild(opt);
+      }
+
+      const months = [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+      ];
+      months.forEach((m) => {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m;
+        mobileV2_monthSelect.appendChild(opt);
+      });
+
+      mobileV2_yearSelect.addEventListener(
+        "change",
+        updateMobileV2CalendarDays
+      );
+      mobileV2_monthSelect.addEventListener(
+        "change",
+        updateMobileV2CalendarDays
+      );
+
+      mobileV2_yearSelect.value = "1404";
+      mobileV2_monthSelect.value = "02";
+      updateMobileV2CalendarDays();
+
+      mobileV2_daysContainer.style.maxHeight = "150px";
+      mobileV2_daysContainer.style.overflowY = "auto";
+
+      // ======================= ساعت =======================
+      const mobileV2_timeToggle = document.getElementById(
+        "mobileV2_timeToggle"
+      );
+      const mobileV2_timePanel = document.getElementById("mobileV2_timePanel");
+      const mobileV2_selectedTime = document.getElementById(
+        "mobileV2_selectedTime"
+      );
+      const mobileV2_hourSelect = document.getElementById(
+        "mobileV2_hourSelect"
+      );
+      const mobileV2_minuteSelect = document.getElementById(
+        "mobileV2_minuteSelect"
+      );
+      const mobileV2_confirmTime = document.getElementById(
+        "mobileV2_confirmTime"
+      );
+
+      mobileV2_timeToggle.addEventListener("click", () => {
+        mobileV2_timePanel.classList.toggle("hidden");
+      });
+
+      for (let h = 0; h <= 23; h++) {
+        const opt = document.createElement("option");
+        opt.value = opt.textContent = h.toString().padStart(2, "0");
+        mobileV2_hourSelect.appendChild(opt);
+      }
+
+      for (let m = 0; m <= 59; m += 5) {
+        const opt = document.createElement("option");
+        opt.value = opt.textContent = m.toString().padStart(2, "0");
+        mobileV2_minuteSelect.appendChild(opt);
+      }
+
+      mobileV2_confirmTime.addEventListener("click", () => {
+        mobileV2_selectedTime.textContent = `${mobileV2_hourSelect.value}:${mobileV2_minuteSelect.value}`;
+        mobileV2_timePanel.classList.add("hidden");
+      });
+    </script>
+    <!-- Swiper Init -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        loop: true,
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+
+        loop: true,
+      });
+    </script>
+    <script>
+      const ITEM_HEIGHT = 107; // محتوای باز شده
+
+      function toggleAccordion(button) {
+        const contents = document.querySelectorAll(".accordion-content");
+
+        contents.forEach((content) => {
+          if (content !== button.nextElementSibling) {
+            content.style.height = "0px";
+          }
+        });
+
+        const content = button.nextElementSibling;
+        const isOpen = content.style.height === `${ITEM_HEIGHT}px`;
+
+        content.style.height = isOpen ? "0px" : `${ITEM_HEIGHT}px`;
+      }
+
+      // موقع لود، فقط دومی باز بشه
+      window.addEventListener("DOMContentLoaded", () => {
+        const contents = document.querySelectorAll(".accordion-content");
+
+        contents.forEach((content, index) => {
+          content.style.height = index === 1 ? `${ITEM_HEIGHT}px` : "0px";
+        });
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 8,
+        loop: false,
+        resistance: false,
+        centeredSlides: false,
+        freeMode: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false,
+        },
+        slidesPerGroup: 1,
+      });
+
+      // جلوگیری از حرکت بعد از رسیدن به آخر
+      swiper.on("reachEnd", function () {
+        swiper.allowSlideNext = false; // دیگر امکان اسکرول به جلو نیست
+      });
+    </script>
+    <script>
+      const btnm = document.getElementById("submitBtn");
+      const input = document.getElementById("textInput");
+
+      btn.addEventListener("click", () => {
+        const value = input.value;
+      });
+    </script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auto-rent</title>
+    <link
+      rel="shortcut icon"
+      href="./src/svg/header/header-1.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <div
+      class="lg:w-lvw lg:h-lvh flex justify-center items-center dark:bg-[#2b2b2b]"
+    >
+      <div
+        class="lg:w-[80%] lg:h-[865px] h-[500px] flex lg:flex-row flex-col w-full justify-center"
+      >
+        <div
+          class="lg:w-[65%] h-full rounded-tr-[8px] rounded-br-[8px] flex flex-col justify-center items-center gap-3.5 relative w-full"
+        >
+          <div class="absolute w-[152px] h-[56px] lg:top-[2%] top-0">
+            <img src="./src/svg/header/header-1.svg" alt="" />
+          </div>
+          <div
+            class="h-[90px] flex flex-col justify-between items-center p-2.5 mt-10 lg:mt-0"
+          >
+            <span class="font-Iran text-[#494949] text-[20px] font-bold">
+              ورود یا ثبت‌نام
+            </span>
+            <span
+              class="font-Iran text-[#494949] text-[13px] lg:text-[clamp(10px,4vw,14px)] font-normal"
+            >
+              کد تایید به شماره موبایلی که وارد می‌کنید، ارسال خواهد شد.
+            </span>
+          </div>
+          <div class="w-[85%] h-[160px] flex flex-col justify-between">
+            <div
+              class="lg:w-full lg:h-[105px] lg:flex lg:flex-col lg:justify-between"
+            >
+              <div class="lg:w-full lg:h-[48px] flex justify-center">
+                <!-- کانتینر ورودی تلفن -->
+                <div
+                  class="flex items-center rounded-2xl border border-zinc-300 bg-white overflow-hidden focus-within:ring-2 focus-within:ring-indigo-500"
+                >
+                  <!-- خود ورودی شماره -->
+                  <input
+                    type="tel"
+                    inputmode="numeric"
+                    placeholder="9********"
+                    class="w-[536px] px-3 py-2 outline-none text-zinc-900 placeholder:text-zinc-400 bg-transparent ltr"
+                    dir="ltr"
+                    aria-label="phone number"
+                  />
+                  <div
+                    class="lg:w-[2px] lg:h-[20px] bg-[#C2C2C2] lg:ml-1.5"
+                  ></div>
+                  <!-- پیش‌شماره -->
+                  <span class="text-zinc-700 text-sm select-none">98+</span>
+                  <!-- بخش سمت چپ: پرچم + کد کشور -->
+                  <div
+                    class="flex items-center gap-2 px-3 py-2 border-l border-zinc-200"
+                  >
+                    <!-- پرچم (قابل تعویض) -->
+                    <img
+                      src="./src/svg/login/login-1.svg"
+                      alt="IR"
+                      class="w-5 h-5 rounded-sm"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="lg:w-[536px] lg:h-[25px] flex gap-3 lg:mt-0 mt-6 items-center justify-center lg:justify-start"
+              >
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  class="lg:w-[24px] lg:h-[24px] w-[18px] h-[18px] rounded-2xl- border border-[#C2C2C2]"
+                />
+                <div class="lg:w-[325px] lg:h-[25px]">
+                  <span
+                    class="font-Iran text-[#727272] text-[14px] font-normal"
+                  >
+                    با ورود و ثبت‌نام در سایت، با
+                    <a href="#" class="text-[#194BF0] font-Iran"
+                      >قوانین اتورنت</a
+                    >
+                    موافقت می‌کنم.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-full lg:h-[48px] bg-[#F3F3F3] flex justify-center items-center rounded-[8px] lg:mt-0 mt-3.5 h-[80px]"
+            >
+              <span class="font-Iran text-[#C2C2C2] text-[14px] font-normal">
+                تایید و ادامه
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[35%] h-auto object-contain hidden lg:flex justify-center items-center"
+        >
+          <img
+            src="./src/images/login/login-1.jpg"
+            alt=""
+            class="h-full w-auto object-cover rounded-tl-[8px] rounded-bl-[8px]"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

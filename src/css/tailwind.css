@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@theme{
+    --color-btn:#194BF0;
+    --color-btn-f:#FFFFFF;
+    --color-header-f:#353535;
+    --color-font:#0C0C0C;
+    --color-neutral:#194BF0;
+    --color-warning:#D79C10;
+    --color-parag:#5E5E5E;
+    --font-Iran:Iran;
+    --spacing-header:1400px;
+    --spacing-w-max:1225px;
+    --radius-global:16px;
+    
+}
+@font-face {
+    font-family: Iran;
+    src: url(../fonts/IRANYekanWeb-Medium.eot);
+    src: url(../fonts/IRANYekanWeb-Medium.ttf);
+    src: url(../fonts/IRANYekanWeb-Medium.woff);
+    src: url(../fonts/IRANYekanWeb-Medium.woff2);
+}
+.text-fluid-phone {
+  font-size: clamp(10px, 2vw, 16px);
+}

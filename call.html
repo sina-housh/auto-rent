@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>auto-rent</title>
+    <link
+      rel="shortcut icon"
+      href="./src/svg/header/header-1.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+  <body>
+    <!-- start header -->
+    <header
+      class="header w-full lg:h-[400px] flex lg:justify-center h-[60px] flex-col"
+    >
+      <div
+        class="w-full lg:h-full bgmber-300 lg:bg-[url(../images/header/img-6.jpg)] bg-no-repeat lg:bg-center bg-cover flex lg:justify-center lg:relative flex-col lg:flex-row lg:before:absolute lg:before:inset-0 lg:before:bg-black/50 lg:before:z-0"
+      >
+        <nav
+          class="nav lg:w-[90%] lg:h-[96px] lg:bg-white lg:rounded-b-2xl flex justify-between lg:items-center lg:px-[32px] dark:bg-[#2b2b2b] h-[60px] w-full p-2 lg:p-0 gap-[4px] lg:gap-0 relative z-10 border-b-1 border-[#2b2b2b]/20"
+        >
+          <!-- دکمه منو (مخصوص موبایل) -->
+          <div
+            class="w-[45px] h-[45px] lg:hidden flex items-center justify-center cursor-pointer border-1 border-solid border-[#2b2b2b]/20 dark:bg-[#2b2b2b]/30 dark:border-1 dark:border-solid dark:border-white/20 rounded-[4px]"
+            id="openSidebar"
+          >
+            <img
+              src="./src/svg/header/header-5.svg"
+              alt="menu"
+              class="w-6 h-6"
+            />
+          </div>
+
+          <!-- لایه تار پشت -->
+          <div
+            id="overlay"
+            class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden transition-opacity duration-500"
+          ></div>
+
+          <!-- سایدبار -->
+          <div
+            id="sidebar"
+            class="fixed top-0 right-0 w-64 h-full bg-white shadow-lg transform translate-x-full z-10 transition-transform duration-500 dark:bg-[#2b2b2b]"
+          >
+            <div
+              class="w-full h-[70px] flex justify-between items-center p-2.5 border-b border-[#2b2b2b]/20"
+            >
+              <div class="w-[96px] h-[36px] lg:hidden">
+                <img
+                  src="./src/svg/header/header-1.svg"
+                  alt="close"
+                  class="w-full h-full"
+                />
+              </div>
+
+              <!-- دکمه بستن -->
+              <div class="m-4 cursor-pointer" id="closeSidebar">
+                <img
+                  src="./src/svg/header/header-10.svg"
+                  alt="close"
+                  class="w-6 h-6"
+                />
+              </div>
+            </div>
+            <!-- محتوای سایدبار -->
+            <div class="p-4">
+              <p class="text-lg"></p>
+              <div class="flex gap-2.5 flex-wrap">
+                <a href="./index.html" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    رزرو خودرو
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    خدمات ما
+                  </span>
+                </a>
+                <a href="./blog.html" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    بلاگ
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    درباره ما
+                  </span>
+                </a>
+                <a href="#" class="w-full h-10 p-1.5 text-[#2b2b2b]">
+                  <span class="font-Iran text-[16px] dark:text-white">
+                    تماس با ما
+                  </span>
+                </a>
+              </div>
+              <div class="flex flex-wrap gap-2.5 mt-[300px]">
+                <div
+                  class="test w-full lg:h-10 flex items-center cursor-pointer p-1.5 dark:text-white border-b-1 border-[#2b2b2b]/30 dark:border-b-1 dark:border-white/20"
+                >
+                  <span
+                    class="test flex font-Iran text-[#2b2b2b] text-[16px] dark:text-white"
+                    >تغیر تم</span
+                  >
+                </div>
+                <a href="./login.html" class="w-full h-10 flex items-center p-1.5">
+                  <img
+                    src="./src/svg/header/header-8.svg"
+                    alt=""
+                    class="w-6 flex"
+                  />
+                  <span
+                    class="font-Iran text-[16px] dark:text-white text-[#2b2b2b]"
+                  >
+                    حساب کاربری
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="lg:w-[151px] lg:h-[60px] w-[40%] h-full ex justify-between"
+          >
+            <img src="./src/svg/header/header-1.svg" alt="" class="flex" />
+          </div>
+          <div
+            class="lg:w-[515px] lg:h-[28px] flex lg:justify-between w-[60%] h-full items-center justify-end"
+          >
+            <a
+              href="./index.html"
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center"
+            >
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >رزرو خودرو</span
+              >
+            </a>
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >خدمات ما</span
+              >
+            </a>
+            <a
+              href="./blog.html"
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center"
+            >
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                بلاگ</span
+              >
+            </a>
+            <a
+              href="./gh.html"
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center"
+            >
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                درباره ما</span
+              >
+            </a>
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+              >
+                تماس با ما</span
+              >
+            </a>
+            <div
+              class="lg:w-fit lg:h-[28px] lg:flex lg:items-center cursor-pointer"
+            >
+              <span
+                class="btn lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden lg:dark:text-white"
+                >تغیر تم</span
+              >
+            </div>
+            <a href="#" class="lg:w-fit lg:h-[28px] lg:flex lg:items-center">
+              <span
+                class="lg:flex lg:font-Iran lg:text-header-f lg lg:text-[15px] hidden"
+              >
+                <img src="./src/svg/header/header-2.svg" alt="" />
+              </span>
+            </a>
+            <div
+              class="w-60 h-14 lg:hidden flex items-center justify-end gap-2.5"
+            >
+              <div
+                id="searchTrigger"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-6.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </div>
+              <!-- 🔽 باکس سرچ که از پایین باز میشه -->
+              <div
+                id="searchBar"
+                class="fixed bottom-[-100%] left-0 w-full h-[15vh] bg-white z-50 transition-all duration-300 ease-in-out flex flex-wrap items-center justify-between px-4 lg:hidden shadow-[0_-2px_10px_rgba(0,0,0,0.2)]"
+              >
+                <span class="font-Iran text-[14px] text-[#2b2b2b]/90 lg:hidden">
+                  جستجو در سایت
+                </span>
+
+                <button id="closeSearch" class="text-[28px] text-blue-600">
+                  &times;
+                </button>
+                <input
+                  type="text"
+                  placeholder="جستجو..."
+                  class="w-full h-10 px-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-amber-500 text-sm font-Iran"
+                />
+              </div>
+              <a
+                href="#"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-7.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 flex justify-center items-center lg:hidden border-1 border-solid border-[#2b2b2b]/10 rounded-[6px] dark:border-1 dark:border-solid dark:border-white/20"
+              >
+                <img
+                  src="./src/svg/header/header-8.svg"
+                  alt=""
+                  class="lg:hidden w-8"
+                />
+              </a>
+            </div>
+          </div>
+          <a
+            href="./login.html"
+            class="lg:w-[122px] lg:h-[40px] lg:bg-btn lg:flex lg:justify-center lg:items-center lg:rounded-[8px] lg:dark:bg-warning"
+          >
+            <span
+              class="lg:font-Iran lg:text-[14px] lg:text-btn-f lg:flex hidden lg:dark:text-[#2b2b2b]"
+              >ورود / ثبت‌نام</span
+            >
+          </a>
+        </nav>
+        <div
+          class="lg:w-[179px] lg:h-[85px] absolute bottom-[140px] lg:flex lg:flex-col lg:justify-center items-center hidden"
+        >
+          <span class="font-Iran lg:font-bold text-[#FDB713] lg:text-[32px]">
+            مقالات
+          </span>
+          <span
+            class="font-Iran lg:font-normal text-[#FFFFFF] lg:text-[14px] flex justify-center items-center lg:gap-[6px]"
+          >
+            اتورنت
+            <img
+              src="./src/svg/header/header-11.svg"
+              alt=""
+              class="lg:w-[12px] lg:h-[12px]"
+            />
+            مقالات
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+    <!-- start map -->
+    <div 
+    class="w-full dark:bg-[#2b2b2b] flex justify-center pt-10">
+      <div
+        class="lg:w-[80%] h-full flex lg:flex-row flex-col items-center lg:items-start w-full"
+      >
+        <div class="w-[60%] h-full p-2.5">
+          <div
+            class="w-full h-[30%] flex flex-col gap-4 justify-center items-center lg:items-start"
+          >
+            <span
+              class="w-full font-Iran text-[18px] lg:text-[24px] text-[#494949] font-normal dark:text-white"
+            >
+              ارتباط با دفتر مرکزی اتورنت
+            </span>
+            <div class="lg:w-[365px] w-[280px] h-[2px] bg-[#C2C2C2]"></div>
+          </div>
+          <div
+            class="w-full h-[70%] gap-[24px] flex flex-col lg:gap-[32px] items-center lg:items-start"
+          >
+            <div class="w-full flex gap-2.5 items-center p-2 overflow-hidden">
+              <img
+                src="./src/svg/call/call-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] shrink-0"
+              />
+
+              <span
+                class="font-Iran text-[#494949] font-normal text-[clamp(12px,1.5vw,18px)] lg:whitespace-nowrap"
+              >
+                آدرس:
+              </span>
+
+              <span
+                class="font-Iran text-[#9A9A9A] font-normal text-[clamp(12px,1.5vw,18px)] lg:whitespace-nowrap"
+              >
+                تهران، میدان آزادی، خیابان آزادی، خیابان شادمان، پلاک 23
+              </span>
+            </div>
+            <div class="w-full flex gap-2.5 items-center p-2 overflow-hidden">
+              <img
+                src="./src/svg/call/call-1.svg"
+                alt=""
+                class="w-[24px] h-[24px] shrink-0"
+              />
+
+              <span
+                class="font-Iran text-[#494949] font-normal text-[clamp(12px,1.5vw,18px)] whitespace-nowrap"
+              >
+                شماره تماس:
+              </span>
+
+              <span
+                class="font-Iran text-[#9A9A9A] font-normal text-[clamp(12px,1.5vw,18px)] whitespace-nowrap"
+              >
+                02166552589
+              </span>
+            </div>
+            <div class="w-full flex gap-2.5 items-center p-2 overflow-hidden">
+              <img
+                src="./src/svg/call/call-2.svg"
+                alt=""
+                class="w-[24px] h-[24px] shrink-0"
+              />
+
+              <span
+                class="font-Iran text-[#494949] font-normal text-[clamp(12px,1.5vw,18px)] whitespace-nowrap"
+              >
+                ایمیل:
+              </span>
+
+              <span
+                class="font-Iran text-[#9A9A9A] font-normal text-[clamp(12px,1.5vw,18px)] whitespace-nowrap"
+              >
+                info@AutoRent.com
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:w-[40%] lg:h-full lg:flex lg:justify-center lg:items-center"
+        >
+          <div
+            class="lg:w-[330px] lg:h-[330px] w-[220px] h-[220px] rounded-lg border border-gray-400 overflow-hidden"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.178364942465!2d51.37595831520655!3d35.70384458019067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e019c44f5f8d7%3A0x6d1a1c7a3b5f35d9!2sShadman%20St%2C%20Tehran%2C%20Iran!5e0!3m2!1sen!2s!4v1695555555555!5m2!1sen!2s"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-[220px] h-[220px] lg:w-[330px] lg:h-[330px]"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end map -->
+    <!-- start qoustation  -->
+    <div
+      class="w-full lg:h-[431px] h-fit justify-center flex pt-7 dark:bg-[#2b2b2b]"
+    >
+      <div class="w-[80%] h-full flex flex-col p-4 gap-6">
+        <!-- عنوان و خط بالا -->
+        <div
+          class="w-full flex flex-col gap-2 justify-center items-center lg:items-start"
+        >
+          <span
+            class="font-Iran text-[18px] lg:text-[24px] text-[#494949] font-normal lg:mr-[70px] dark:text-white lg:w-full"
+          >
+            ارسال پیام شما به مجموعه اتورنت
+          </span>
+          <div
+            class="lg:w-[365px] w-[280px] h-[2px] bg-[#C2C2C2] lg:mr-[70px]"
+          ></div>
+        </div>
+        <div class="w-full h-full flex lg:flex-row flex-col">
+          <div
+            class="lg:w-[60%] h-full flex flex-col items-center justify-center gap-[24px] w-full"
+          >
+            <!-- ورودی 1 -->
+            <div class="relative w-[80%]">
+              <div class="relative border border-gray-400 rounded-lg">
+                <input
+                  type="text"
+                  placeholder="نام شما"
+                  class="w-full p-2 pr-8 rounded-lg font-Iran text-[14px] text-[#9A9A9A]"
+                />
+                <button
+                  onclick="this.previousElementSibling.value=''"
+                  class="absolute top-1/2 left-3 -translate-y-1/2 text-[#AEAEAE] font-bold text-[21px]"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+            <!-- ورودی 2 -->
+            <div class="relative w-[80%]">
+              <div class="relative border border-gray-400 rounded-lg">
+                <input
+                  type="text"
+                  placeholder="Mohammad@Gmail.com"
+                  class="w-full p-2 pr-8 rounded-lg font-Iran text-[#9A9A9A] text-[14px]"
+                />
+                <button
+                  onclick="this.previousElementSibling.value=''"
+                  class="absolute top-1/2 left-3 -translate-y-1/2 text-[#AEAEAE] font-bold text-[21px]"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+            <!-- ورودی 3 -->
+            <div class="relative w-[80%]">
+              <div class="relative border border-gray-400 rounded-lg">
+                <input
+                  type="text"
+                  placeholder="شماره شما"
+                  class="w-full p-2 pr-8 rounded-lg font-Iran text-[#9A9A9A] text-[14px]"
+                />
+                <button
+                  onclick="this.previousElementSibling.value=''"
+                  class="absolute top-1/2 left-3 -translate-y-1/2 text-[#AEAEAE] font-bold text-[21px]"
+                >
+                  ×
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:w-[40%] lg:h-full lg:flex lg:flex-col lg:justify-center p-2.5"
+          >
+            <!-- سمت چپ: اینپوت توضیحات + دکمه کلی -->
+            <div>
+              <div class="flex flex-col gap-2">
+                <textarea
+                  class="w-[100%] h-[136px] border border-gray-400 rounded-lg p-2 resize-none dark:bg-[#2b2b2b]/50 dark:text-white placeholder-gray-400 bg-amber-50 font-Iran text-[#2b2b2b]"
+                ></textarea>
+                <button
+                  class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 font-Iran text-[14px] w-[100%]"
+                >
+                  ارسال
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end qoustation  -->
+    <!-- start footer -->
+    <footer
+      class="footer w-full pt-[30px] flex justify-center dark:bg-[#2b2b2b]"
+    >
+      <div
+        class="w-[90%] h-fit bg-[url(../images/blog/blog-11.png)] flex flex-col items-center lg:py-[40px] lg:justify-between rounded-global bg-[#292D32]"
+      >
+        <div
+          class="lg:w-[90%] lg:h-[101px] flex lg:justify-between lg:items-center lg:p-4 lg:rounded-global lg:border lg:border-[#868686] w-[80%] flex-col lg:flex-row items-center"
+        >
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-1.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  ارتباط با ما
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  0912-21326545
+                </span>
+              </div>
+            </div>
+          </a>
+          <div
+            class="lg;w-[32px] lg:h-[25px] lg:border lg:border-[#868686] lg:flex"
+          ></div>
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-2.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  ایمیل
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  autorent@info.com
+                </span>
+              </div>
+            </div>
+          </a>
+          <div
+            class="lg;w-[32px] lg:h-[25px] lg:border lg:border-[#868686] lg:flex"
+          ></div>
+          <a
+            href="#"
+            class="lg:w-[20%] h-[69px] flex rounded-[16px] lg:rounded-0 lg:py-0 py-1.5 justify-center border border-[#868686] lg:mt-0 mt-2 lg:border-0 w-[60%] pl-2 lg:pl-0"
+          >
+            <div class="w-[35%] h-full flex justify-center items-center">
+              <div
+                class="lg:w-[60%] lg:h-[60%] rounded-[12px] border border-[#FFFFFF] flex justify-center items-center w-[70%] h-[70%]"
+              >
+                <img src="./src/svg/footer/footer-3.svg" alt="" class="flex" />
+              </div>
+            </div>
+            <div class="lg:w-[65%] lg:h-full lg:flex lg:items-center">
+              <div
+                class="w-full h-[80%] flex justify-center items-center lg:gap-3 flex-col gap-1.5"
+              >
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  آدرس
+                </span>
+                <span class="font-Iran text-[#FFFBFB] font-normal text-[14px]">
+                  تهران- خ شادمان
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="lg:w-[97%] lg:h-[233px] lg:flex lg:flex-col lg:items-center"
+        >
+          <div class="lg:w-[90%] lg:h-[80%] lg:flex">
+            <div class="lg:w-[60%] lg:h-full lg:flex">
+              <div
+                class="lg:w-[80%] lg:h-full flex justify-center flex-col lg:block"
+              >
+                <div class="lg:w-full lg:h-[40%] lg:flex lg:items-center">
+                  <img src="./src/images/footer/footer-1.png" alt="" />
+                </div>
+                <div class="lg:w-full lg:h-[60%] flex lg:items-centerpr-[30px]">
+                  <span
+                    class="font-Iran lg;text-[#FFF] lg:text-[14px] lg:font-normal"
+                  >
+                    اتورنت با رویکرد اعتماد به مشتری، با در اختیار داشتن
+                    بزرگترین ناوگان خودرویی متشکل از انواع خودروهای صفر کیلومتر،
+                    اقتصادی تا تجاری در سراسر کشور ایران آماده خدمت‌رسانی به
+                    مشتریان است.
+                  </span>
+                </div>
+              </div>
+              <div
+                class="lg:w-[20%] lg:h-full flex flex-col justify-between items-center w-full h-fit lg:mt-0 mt-2.5"
+              >
+                <div class="w-full h-[50%] flex items-center justify-center">
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    دسترسی آسان
+                  </span>
+                </div>
+                <div
+                  class="w-full h-[50%] flex flex-col justify-between items-center lg:mt-0 mt-2.5"
+                >
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    سوالات متداول
+                  </span>
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    تماس با ما
+                  </span>
+                  <span
+                    class="font-Iran text-[#414141] lg:text-[14px] lg:font-medium"
+                  >
+                    درباره ما
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lg:w-[40%] h-full flex flex-col justify-center w-full items-center"
+            >
+              <span
+                class="font-Iran text-[#414141] text-[16px] font-semibold w-full flex justify-start pr-[11%] lg:pr-0 lg:block"
+              >
+                خبرنامه
+              </span>
+              <!-- کانتینر input + دکمه -->
+              <div class="flex lg:w-full font-Iran w-[80%] rounded-global">
+                <!-- اینپوت -->
+                <input
+                  id="textInput"
+                  type="text"
+                  placeholder="ایمیل خود را وارد کنید"
+                  class="flex-1 border border-gray-300 px-4 py-2 rounded-r-md focus:outline-none lg:border lg:order-[#AEAEAE] font-Iran w-[40%]"
+                />
+                <!-- دکمه سمت چپ -->
+                <button
+                  id="submitBtn"
+                  class="bg-[#FDB713] text-white px-4 py-2 rounded-l-md hover:bg-blue-600 lg:rounded-[6px] lg:px-[16px] lg:py:[12px] lg:cursor-pointer"
+                >
+                  ارسال
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="w-full h-[20%] flex justify-center gap-2 items-center lg:mt-0 mt-3"
+          >
+            <img
+              src="./src/svg/footer/footer-4.svg"
+              alt=""
+              class="w-[24px] h-[24px]"
+            />
+            <span class="font-Iran text-[#9A9A9A] text-[14px] font-medium">
+              تمامی حقوق این وبسایت متعلق به اتورنت می‌باشد
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- dark mode -->
+    <script>
+      let btn = document.querySelector(".btn");
+      btn.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      let test = document.querySelector(".test");
+      test.addEventListener("click", function () {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+    <script>
+      const openBtnn = document.getElementById("openSidebar");
+      const closeBtn = document.getElementById("closeSidebar");
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+
+      // باز شدن
+      openBtnn.addEventListener("click", () => {
+        sidebar.classList.remove("translate-x-full");
+        overlay.classList.remove("hidden");
+      });
+
+      // بسته شدن با دکمه
+      closeBtn.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+
+      // بسته شدن با کلیک روی بک‌گراند
+      overlay.addEventListener("click", () => {
+        sidebar.classList.add("translate-x-full");
+        overlay.classList.add("hidden");
+      });
+    </script>
+    <!-- 🧠 جاوااسکریپت برای کنترل باز و بسته شدن -->
+    <script>
+      const trigger = document.getElementById("searchTrigger");
+      const searchBar = document.getElementById("searchBar");
+      const closBtn = document.getElementById("closeSearch");
+
+      trigger.addEventListener("click", () => {
+        searchBar.classList.remove("bottom-[-100%]");
+        searchBar.classList.add("bottom-0");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        searchBar.classList.remove("bottom-0");
+        searchBar.classList.add("bottom-[-100%]");
+      });
+    </script>
+    <script>
+      const toggle = document.getElementById("dropdown-toggle");
+      const menu = document.getElementById("city-menu");
+      const selected = document.getElementById("selected-city");
+      const arrowIcon = document.getElementById("arrow-icon");
+
+      let isOpen = false;
+
+      // آرایه شهرها و مقدار اولیه
+      const cities = ["تهران", "اصفهان", "مشهد", "شیراز", "تبریز"];
+      const randomCity = cities[Math.floor(Math.random() * cities.length)];
+      selected.textContent = randomCity;
+
+      toggle.addEventListener("click", () => {
+        isOpen = !isOpen;
+        if (isOpen) {
+          menu.classList.remove("max-h-0");
+          menu.classList.add("max-h-[300px]");
+
+          // افکت چسبندگی input و منو
+          toggle.classList.add("rounded-b-none", "border-b-0");
+          menu.classList.add("rounded-t-none");
+
+          arrowIcon.classList.add("rotate-180");
+        } else {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+
+          arrowIcon.classList.remove("rotate-180");
+        }
+      });
+
+      menu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", () => {
+          selected.textContent = item.getAttribute("data-city");
+
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+          arrowIcon.classList.remove("rotate-180");
+          isOpen = false;
+        });
+      });
+
+      document.addEventListener("click", (e) => {
+        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+          menu.classList.add("max-h-0");
+          menu.classList.remove("max-h-[300px]");
+          toggle.classList.remove("rounded-b-none", "border-b-0");
+          menu.classList.remove("rounded-t-none");
+          arrowIcon.classList.remove("rotate-180");
+          isOpen = false;
+        }
+      });
+    </script>
+    <!-- script date desktap -->
+    <script>
+      const display = document.getElementById("date-display");
+      const icon = document.getElementById("calendar-icon");
+      const panel = document.getElementById("calendar-panel");
+      const calendarDays = document.getElementById("calendar-days");
+      const selectedDate = document.getElementById("selected-date");
+      const yearSelect = document.getElementById("year-select");
+      const monthSelect = document.getElementById("month-select");
+
+      let selectedDay = 5;
+      let selectedMonth = 2;
+      let selectedYear = 1404;
+
+      // پر کردن سال و ماه
+      for (let y = 1390; y <= 1450; y++) {
+        const option = document.createElement("option");
+        option.value = y;
+        option.textContent = y;
+        if (y === selectedYear) option.selected = true;
+        yearSelect.appendChild(option);
+      }
+
+      for (let m = 1; m <= 12; m++) {
+        const option = document.createElement("option");
+        option.value = m;
+        option.textContent = m.toString().padStart(2, "0");
+        if (m === selectedMonth) option.selected = true;
+        monthSelect.appendChild(option);
+      }
+
+      // باز و بسته کردن تقویم
+      icon.addEventListener("click", (e) => {
+        e.stopPropagation();
+        panel.classList.toggle("hidden");
+        renderCalendar();
+      });
+
+      // کلیک بیرون برای بستن
+      document.addEventListener("click", (e) => {
+        if (!display.contains(e.target) && !panel.contains(e.target)) {
+          panel.classList.add("hidden");
+        }
+      });
+
+      // تغییر سال/ماه
+      yearSelect.addEventListener("change", () => {
+        selectedYear = parseInt(yearSelect.value);
+        renderCalendar();
+      });
+
+      monthSelect.addEventListener("change", () => {
+        selectedMonth = parseInt(monthSelect.value);
+        renderCalendar();
+      });
+
+      // نمایش تاریخ
+      function updateDisplayedDate() {
+        const monthStr = selectedMonth.toString().padStart(2, "0");
+        selectedDate.textContent = `${selectedDay}/${monthStr}/${selectedYear}`;
+      }
+
+      // رندر روزهای تقویم
+      function renderCalendar() {
+        calendarDays.innerHTML = "";
+        const daysInMonth = 31;
+
+        for (let d = 1; d <= daysInMonth; d++) {
+          const cell = document.createElement("span");
+          cell.textContent = d;
+          cell.className = "cursor-pointer hover:bg-blue-100 py-1 rounded-full";
+
+          if (d === selectedDay) {
+            cell.classList.add("bg-blue-500", "text-white", "font-bold");
+          }
+
+          cell.addEventListener("click", () => {
+            selectedDay = d;
+            updateDisplayedDate();
+            panel.classList.add("hidden");
+          });
+
+          calendarDays.appendChild(cell);
+        }
+      }
+
+      // اولین بار
+      updateDisplayedDate();
+    </script>
+    <!-- script time desktaop -->
+    <script>
+      const selectedTime = document.getElementById("selected-time");
+      const openBtn = document.getElementById("open-time-panel");
+      const timePanel = document.getElementById("time-panel");
+      const hourSelect = document.getElementById("hour-select");
+      const minuteSelect = document.getElementById("minute-select");
+      const confirmBtn = document.getElementById("confirm-time");
+
+      // مقدار پیش‌فرض
+      let selectedHour = 14;
+      let selectedMinute = 30;
+
+      // پر کردن ساعت و دقیقه
+      for (let h = 0; h < 24; h++) {
+        const opt = document.createElement("option");
+        opt.value = h;
+        opt.textContent = h.toString().padStart(2, "0");
+        if (h === selectedHour) opt.selected = true;
+        hourSelect.appendChild(opt);
+      }
+
+      for (let m = 0; m < 60; m++) {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m.toString().padStart(2, "0");
+        if (m === selectedMinute) opt.selected = true;
+        minuteSelect.appendChild(opt);
+      }
+
+      // نمایش مقدار پیش‌فرض
+      selectedTime.textContent = `${selectedHour
+        .toString()
+        .padStart(2, "0")}:${selectedMinute.toString().padStart(2, "0")}`;
+
+      // باز کردن پنل
+      openBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        timePanel.classList.toggle("hidden");
+      });
+
+      // تایید زمان
+      confirmBtn.addEventListener("click", () => {
+        const h = hourSelect.value.toString().padStart(2, "0");
+        const m = minuteSelect.value.toString().padStart(2, "0");
+        selectedTime.textContent = `${h}:${m}`;
+        timePanel.classList.add("hidden");
+      });
+
+      // بستن با کلیک بیرون
+      document.addEventListener("click", (e) => {
+        if (!timePanel.contains(e.target) && !openBtn.contains(e.target)) {
+          timePanel.classList.add("hidden");
+        }
+      });
+    </script>
+    <!-- script respansiv mobaile -->
+    <script>
+      // ======================= جستجوی شهر =======================
+      const mobileV2_cityInput = document.getElementById("mobileV2_cityInput");
+      const mobileV2_cityList = document.getElementById("mobileV2_cityList");
+      const mobileV2_cityItems = Array.from(
+        mobileV2_cityList.getElementsByTagName("li")
+      );
+
+      mobileV2_cityInput.addEventListener("input", () => {
+        const term = mobileV2_cityInput.value.toLowerCase();
+        let hasMatch = false;
+        mobileV2_cityItems.forEach((li) => {
+          const match = li.textContent.toLowerCase().includes(term);
+          li.style.display = match ? "block" : "none";
+          if (match) hasMatch = true;
+        });
+        mobileV2_cityList.classList.toggle("hidden", !hasMatch);
+      });
+
+      mobileV2_cityItems.forEach((li) => {
+        li.addEventListener("click", () => {
+          mobileV2_cityInput.value = li.textContent;
+          mobileV2_cityList.classList.add("hidden");
+        });
+      });
+
+      // ======================= تقویم =======================
+      const mobileV2_dateToggle = document.getElementById(
+        "mobileV2_dateToggle"
+      );
+      const mobileV2_calendarPanel = document.getElementById(
+        "mobileV2_calendarPanel"
+      );
+      const mobileV2_selectedDate = document.getElementById(
+        "mobileV2_selectedDate"
+      );
+      const mobileV2_yearSelect = document.getElementById(
+        "mobileV2_yearSelect"
+      );
+      const mobileV2_monthSelect = document.getElementById(
+        "mobileV2_monthSelect"
+      );
+      const mobileV2_daysContainer = document.getElementById(
+        "mobileV2_daysContainer"
+      );
+
+      mobileV2_dateToggle.addEventListener("click", () => {
+        mobileV2_calendarPanel.classList.toggle("hidden");
+      });
+
+      function updateMobileV2CalendarDays() {
+        mobileV2_daysContainer.innerHTML = "";
+        const year = parseInt(mobileV2_yearSelect.value);
+        const month = parseInt(mobileV2_monthSelect.value);
+        const daysInMonth = new Date(year, month, 0).getDate();
+
+        for (let i = 1; i <= daysInMonth; i++) {
+          const day = document.createElement("div");
+          day.textContent = i;
+          day.className =
+            "cursor-pointer hover:bg-warning rounded-full transition text-sm";
+          day.addEventListener("click", () => {
+            mobileV2_selectedDate.textContent = `${i}/${mobileV2_monthSelect.value}/${mobileV2_yearSelect.value}`;
+            mobileV2_calendarPanel.classList.add("hidden");
+          });
+          mobileV2_daysContainer.appendChild(day);
+        }
+      }
+
+      // مقداردهی اولیه سال و ماه
+      for (let y = 1400; y <= 1410; y++) {
+        const opt = document.createElement("option");
+        opt.value = y;
+        opt.textContent = y;
+        mobileV2_yearSelect.appendChild(opt);
+      }
+
+      const months = [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08",
+        "09",
+        "10",
+        "11",
+        "12",
+      ];
+      months.forEach((m) => {
+        const opt = document.createElement("option");
+        opt.value = m;
+        opt.textContent = m;
+        mobileV2_monthSelect.appendChild(opt);
+      });
+
+      mobileV2_yearSelect.addEventListener(
+        "change",
+        updateMobileV2CalendarDays
+      );
+      mobileV2_monthSelect.addEventListener(
+        "change",
+        updateMobileV2CalendarDays
+      );
+
+      mobileV2_yearSelect.value = "1404";
+      mobileV2_monthSelect.value = "02";
+      updateMobileV2CalendarDays();
+
+      mobileV2_daysContainer.style.maxHeight = "150px";
+      mobileV2_daysContainer.style.overflowY = "auto";
+
+      // ======================= ساعت =======================
+      const mobileV2_timeToggle = document.getElementById(
+        "mobileV2_timeToggle"
+      );
+      const mobileV2_timePanel = document.getElementById("mobileV2_timePanel");
+      const mobileV2_selectedTime = document.getElementById(
+        "mobileV2_selectedTime"
+      );
+      const mobileV2_hourSelect = document.getElementById(
+        "mobileV2_hourSelect"
+      );
+      const mobileV2_minuteSelect = document.getElementById(
+        "mobileV2_minuteSelect"
+      );
+      const mobileV2_confirmTime = document.getElementById(
+        "mobileV2_confirmTime"
+      );
+
+      mobileV2_timeToggle.addEventListener("click", () => {
+        mobileV2_timePanel.classList.toggle("hidden");
+      });
+
+      for (let h = 0; h <= 23; h++) {
+        const opt = document.createElement("option");
+        opt.value = opt.textContent = h.toString().padStart(2, "0");
+        mobileV2_hourSelect.appendChild(opt);
+      }
+
+      for (let m = 0; m <= 59; m += 5) {
+        const opt = document.createElement("option");
+        opt.value = opt.textContent = m.toString().padStart(2, "0");
+        mobileV2_minuteSelect.appendChild(opt);
+      }
+
+      mobileV2_confirmTime.addEventListener("click", () => {
+        mobileV2_selectedTime.textContent = `${mobileV2_hourSelect.value}:${mobileV2_minuteSelect.value}`;
+        mobileV2_timePanel.classList.add("hidden");
+      });
+    </script>
+    <!-- Swiper Init -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 2.5,
+        spaceBetween: 10,
+        loop: true,
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        slidesPerView: 2,
+        spaceBetween: 10,
+
+        loop: true,
+      });
+    </script>
+    <script>
+      const ITEM_HEIGHT = 107; // محتوای باز شده
+
+      function toggleAccordion(button) {
+        const contents = document.querySelectorAll(".accordion-content");
+
+        contents.forEach((content) => {
+          if (content !== button.nextElementSibling) {
+            content.style.height = "0px";
+          }
+        });
+
+        const content = button.nextElementSibling;
+        const isOpen = content.style.height === `${ITEM_HEIGHT}px`;
+
+        content.style.height = isOpen ? "0px" : `${ITEM_HEIGHT}px`;
+      }
+
+      // موقع لود، فقط دومی باز بشه
+      window.addEventListener("DOMContentLoaded", () => {
+        const contents = document.querySelectorAll(".accordion-content");
+
+        contents.forEach((content, index) => {
+          content.style.height = index === 1 ? `${ITEM_HEIGHT}px` : "0px";
+        });
+      });
+    </script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 8,
+        loop: false,
+        resistance: false,
+        centeredSlides: false,
+        freeMode: false,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: false,
+        },
+        slidesPerGroup: 1,
+      });
+
+      // جلوگیری از حرکت بعد از رسیدن به آخر
+      swiper.on("reachEnd", function () {
+        swiper.allowSlideNext = false; // دیگر امکان اسکرول به جلو نیست
+      });
+    </script>
+    <script>
+      const btnm = document.getElementById("submitBtn");
+      const input = document.getElementById("textInput");
+
+      btn.addEventListener("click", () => {
+        const value = input.value;
+      });
+    </script>
+  </body>
+</html>
